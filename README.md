@@ -1,8 +1,10 @@
-<img src="http://i.imgur.com/hXY4lcC.png" height="42px" alt="microG" /> Services Core (GmsCore)
+<img src="http://i.imgur.com/hXY4lcC.png" height="42px" alt="microG" /> Not Your Average Services Core (NYAGmsCore)
 =======
-[![Build Status](https://github.com/microg/GmsCore/workflows/Build/badge.svg)](https://travis-ci.com/microg/GmsCore)
+[![Build Status](https://github.com/lividhen/GmsCore/workflows/Build/badge.svg)]
+**WIP**
 
-microG GmsCore is a FLOSS (Free/Libre Open Source Software) framework to allow applications designed for Google Play Services to run on systems, where Play Services is not available.
+NYAGmsCore is a FLOSS (Free/Libre Open Source Software) mod of micro g's [GmsCore](https://github.com/microg/GmsCore) that can be installed on systems with locked bootloaders where GMS cannot be completly removed. Which... feels like it should be illegal.
+Lspatch/Taichi module is planned to make apps actually use it without manual editing. For now I just want to get it running in a user context.
 
 ### Please refer to the [wiki](https://github.com/microg/android_packages_apps_GmsCore/wiki) for downloads and instructions
 
