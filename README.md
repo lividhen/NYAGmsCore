@@ -3,7 +3,8 @@
 [![Build Status](https://github.com/lividhen/GmsCore/workflows/Build/badge.svg)]
 **WIP**
 
-NYAGmsCore is a FLOSS (Free/Libre Open Source Software) mod of micro g's [GmsCore](https://github.com/microg/GmsCore) that can be installed on systems with locked bootloaders where GMS cannot be completly removed. Which... feels like it should be illegal.
+NYAGmsCore is a FLOSS (Free/Libre Open Source Software) mod of micro g's [GmsCore](https://github.com/microg/GmsCore) that can be installed on systems with locked bootloaders where GMS cannot be completly removed. Which... feels like it should be illegal.  
+
 Lspatch/Taichi module is planned to make apps actually use it without manual editing. For now I just want to get it running in a user context.
 
 ### Please refer to the [wiki](https://github.com/microg/android_packages_apps_GmsCore/wiki) for downloads and instructions
