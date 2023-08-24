@@ -41,8 +41,8 @@
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS">
             <intent-filter>
-                <action android:name="com.android.location.service.v2.NetworkLocationProvider" />
-                <action android:name="com.android.location.service.v3.NetworkLocationProvider" />
+                <action android:name="com.android.location.service.v2.NyaNetworkLocationProvider" />
+                <action android:name="com.android.location.service.v3.NyaNetworkLocationProvider" />
             </intent-filter>
             <meta-data
                 android:name="serviceVersion"
@@ -53,8 +53,8 @@
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS">
             <intent-filter>
-                <action android:name="com.android.location.service.GeocodeProvider" />
-                <action android:name="com.google.android.location.GeocodeProvider" />
+                <action android:name="com.android.location.service.NyaGeocodeProvider" />
+                <action android:name="com.google.android.location.NyaGeocodeProvider" />
             </intent-filter>
             <meta-data
                 android:name="serviceVersion"
