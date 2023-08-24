@@ -5,7 +5,6 @@
 
 package org.microg.gms.ui
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Base64
 import android.util.Log
@@ -22,13 +21,13 @@ import androidx.preference.PreferenceFragmentCompat
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.BuildConfig
-import com.google.android.gms.R
-import com.google.android.gms.recaptcha.Recaptcha
-import com.google.android.gms.recaptcha.RecaptchaAction
-import com.google.android.gms.recaptcha.RecaptchaActionType
-import com.google.android.gms.safetynet.SafetyNet
-import com.google.android.gms.tasks.await
+import com.nyagoogle.android.gms.BuildConfig
+import com.nyagoogle.android.gms.R
+import com.nyagoogle.android.gms.recaptcha.Recaptcha
+import com.nyagoogle.android.gms.recaptcha.RecaptchaAction
+import com.nyagoogle.android.gms.recaptcha.RecaptchaActionType
+import com.nyagoogle.android.gms.safetynet.SafetyNet
+import com.nyagoogle.android.gms.tasks.await
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject

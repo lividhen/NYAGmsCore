@@ -17,7 +17,7 @@
 package org.microg.gms.maps.mapbox
 
 import android.util.Log
-import com.google.android.gms.maps.internal.IGoogleMapDelegate
+import com.nyagoogle.android.gms.maps.internal.IGoogleMapDelegate
 import com.mapbox.mapboxsdk.camera.CameraPosition
 import com.mapbox.mapboxsdk.camera.CameraUpdate
 import com.mapbox.mapboxsdk.geometry.LatLngBounds

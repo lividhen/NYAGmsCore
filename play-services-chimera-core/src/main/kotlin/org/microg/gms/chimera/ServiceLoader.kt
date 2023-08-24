@@ -6,7 +6,7 @@
 package org.microg.gms.chimera
 
 import android.content.Context
-import com.google.android.chimera.Service
+import com.nyagoogle.android.chimera.Service
 
 interface ServiceLoader {
     fun loadService(context: Context): Service

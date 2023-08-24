@@ -8,7 +8,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 android {
-    namespace "com.google.android.gms.oss.licenses"
+    namespace "com.nyagoogle.android.gms.oss.licenses"
 
     compileSdkVersion androidCompileSdk
     buildToolsVersion "$androidBuildVersionTools"

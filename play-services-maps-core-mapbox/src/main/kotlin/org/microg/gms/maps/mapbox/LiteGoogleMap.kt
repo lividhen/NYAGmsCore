@@ -20,13 +20,10 @@ import android.widget.ImageView
 import androidx.annotation.UiThread
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.dynamic.unwrap
-import com.google.android.gms.maps.GoogleMapOptions
-import com.google.android.gms.maps.internal.*
-import com.google.android.gms.maps.model.*
-import com.google.android.gms.maps.model.internal.*
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.dynamic.unwrap
+import com.nyagoogle.android.gms.maps.GoogleMapOptions
 import com.mapbox.mapboxsdk.Mapbox
 import com.mapbox.mapboxsdk.WellKnownTileServer
 import com.mapbox.mapboxsdk.location.engine.*
@@ -37,6 +34,35 @@ import com.mapbox.mapboxsdk.style.layers.*
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource
 import com.mapbox.turf.TurfConstants.UNIT_METERS
 import com.mapbox.turf.TurfMeasurement
+import com.nyagoogle.android.gms.maps.internal.ICancelableCallback
+import com.nyagoogle.android.gms.maps.internal.ILocationSourceDelegate
+import com.nyagoogle.android.gms.maps.internal.IOnCameraChangeListener
+import com.nyagoogle.android.gms.maps.internal.IOnCameraIdleListener
+import com.nyagoogle.android.gms.maps.internal.IOnCameraMoveCanceledListener
+import com.nyagoogle.android.gms.maps.internal.IOnCameraMoveListener
+import com.nyagoogle.android.gms.maps.internal.IOnCameraMoveStartedListener
+import com.nyagoogle.android.gms.maps.internal.IOnMapLoadedCallback
+import com.nyagoogle.android.gms.maps.internal.IOnMapReadyCallback
+import com.nyagoogle.android.gms.maps.internal.IOnMarkerDragListener
+import com.nyagoogle.android.gms.maps.internal.IProjectionDelegate
+import com.nyagoogle.android.gms.maps.internal.ISnapshotReadyCallback
+import com.nyagoogle.android.gms.maps.internal.IUiSettingsDelegate
+import com.nyagoogle.android.gms.maps.model.CameraPosition
+import com.nyagoogle.android.gms.maps.model.CircleOptions
+import com.nyagoogle.android.gms.maps.model.GroundOverlayOptions
+import com.nyagoogle.android.gms.maps.model.LatLng
+import com.nyagoogle.android.gms.maps.model.LatLngBounds
+import com.nyagoogle.android.gms.maps.model.MapStyleOptions
+import com.nyagoogle.android.gms.maps.model.MarkerOptions
+import com.nyagoogle.android.gms.maps.model.PolygonOptions
+import com.nyagoogle.android.gms.maps.model.PolylineOptions
+import com.nyagoogle.android.gms.maps.model.TileOverlayOptions
+import com.nyagoogle.android.gms.maps.model.internal.ICircleDelegate
+import com.nyagoogle.android.gms.maps.model.internal.IGroundOverlayDelegate
+import com.nyagoogle.android.gms.maps.model.internal.IMarkerDelegate
+import com.nyagoogle.android.gms.maps.model.internal.IPolygonDelegate
+import com.nyagoogle.android.gms.maps.model.internal.IPolylineDelegate
+import com.nyagoogle.android.gms.maps.model.internal.ITileOverlayDelegate
 import org.microg.gms.maps.mapbox.model.*
 import org.microg.gms.maps.mapbox.utils.toGms
 import org.microg.gms.maps.mapbox.utils.toMapbox
@@ -50,14 +76,14 @@ const val DEFAULT_INTERVAL_MILLIS = 1000L
 const val DEFAULT_FASTEST_INTERVAL_MILLIS = 1000L
 
 class MetaSnapshot(
-    val snapshot: MapSnapshot,
-    val cameraPosition: CameraPosition,
-    val cameraBounds: com.mapbox.mapboxsdk.geometry.LatLngBounds?,
-    val width: Int,
-    val height: Int,
-    val paddingRight: Int,
-    val paddingTop: Int,
-    val dpi: Float
+        val snapshot: MapSnapshot,
+        val cameraPosition: CameraPosition,
+        val cameraBounds: com.mapbox.mapboxsdk.geometry.LatLngBounds?,
+        val width: Int,
+        val height: Int,
+        val paddingRight: Int,
+        val paddingTop: Int,
+        val dpi: Float
 ) {
     fun latLngForPixelFixed(point: PointF) = snapshot.latLngForPixel(
         PointF(
@@ -395,7 +421,7 @@ class LiteGoogleMapImpl(context: Context, var options: GoogleMapOptions) : Abstr
     }
 
     override fun animateCameraWithDurationAndCallback(
-        cameraUpdate: IObjectWrapper?, duration: Int, callback: ICancelableCallback?
+            cameraUpdate: IObjectWrapper?, duration: Int, callback: ICancelableCallback?
     ) = animateCameraWithCallback(cameraUpdate, callback)
 
     override fun stopAnimation() {

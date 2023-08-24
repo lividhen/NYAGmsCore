@@ -6,7 +6,11 @@
 package org.microg.gms.nearby.exposurenotification
 
 import android.util.Log
-import com.google.android.gms.nearby.exposurenotification.*
+import com.nyagoogle.android.gms.nearby.exposurenotification.CalibrationConfidence
+import com.nyagoogle.android.gms.nearby.exposurenotification.ExposureConfiguration
+import com.nyagoogle.android.gms.nearby.exposurenotification.ExposureInformation
+import com.nyagoogle.android.gms.nearby.exposurenotification.RiskLevel
+import com.nyagoogle.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import java.util.concurrent.TimeUnit
 
 data class ExposureScanSummary(val time: Long, val rpis: Int, val records: Int)

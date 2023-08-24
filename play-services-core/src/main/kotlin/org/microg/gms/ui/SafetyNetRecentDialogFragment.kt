@@ -12,8 +12,8 @@ import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
-import com.google.android.gms.R
-import com.google.android.gms.databinding.SafetyNetRecentFragmentBinding
+import com.nyagoogle.android.gms.R
+import com.nyagoogle.android.gms.databinding.SafetyNetRecentFragmentBinding
 import org.microg.gms.safetynet.SafetyNetRequestType
 import org.microg.gms.safetynet.SafetyNetRequestType.*
 import org.microg.gms.safetynet.SafetyNetSummary

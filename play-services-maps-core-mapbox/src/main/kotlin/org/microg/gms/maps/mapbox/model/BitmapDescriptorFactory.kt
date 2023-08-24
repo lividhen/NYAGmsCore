@@ -20,9 +20,9 @@ import android.content.res.Resources
 import android.graphics.*
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.maps.model.internal.IBitmapDescriptorFactoryDelegate
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.maps.model.internal.IBitmapDescriptorFactoryDelegate
 import com.mapbox.mapboxsdk.maps.MapboxMap
 import com.mapbox.mapboxsdk.maps.Style
 import org.microg.gms.maps.mapbox.R

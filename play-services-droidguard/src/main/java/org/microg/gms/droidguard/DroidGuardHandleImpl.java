@@ -7,9 +7,9 @@ package org.microg.gms.droidguard;
 
 import android.util.Log;
 
-import com.google.android.gms.droidguard.DroidGuardHandle;
-import com.google.android.gms.droidguard.internal.DroidGuardResultsRequest;
-import com.google.android.gms.droidguard.internal.IDroidGuardHandle;
+import com.nyagoogle.android.gms.droidguard.DroidGuardHandle;
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardResultsRequest;
+import com.nyagoogle.android.gms.droidguard.internal.IDroidGuardHandle;
 
 import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;

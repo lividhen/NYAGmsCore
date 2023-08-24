@@ -17,10 +17,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.NavHostFragment
-import com.google.android.gms.fido.Fido
-import com.google.android.gms.fido.Fido.*
-import com.google.android.gms.fido.fido2.api.common.*
-import com.google.android.gms.fido.fido2.api.common.ErrorCode.*
+import com.nyagoogle.android.gms.fido.Fido.*
+import com.nyagoogle.android.gms.fido.fido2.api.common.*
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialCreationOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialRequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserRequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.ErrorCode
+import com.nyagoogle.android.gms.fido.fido2.api.common.ErrorCode.*
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredential
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialCreationOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialRequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.RequestOptions
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Job
 import org.microg.gms.common.GmsService
@@ -163,11 +174,11 @@ class AuthenticatorActivity : AppCompatActivity(), TransportHandlerCallback {
                         } else {
                             for (transport in descriptor.transports) {
                                 val allowedTransport = when (transport) {
-                                    com.google.android.gms.fido.common.Transport.BLUETOOTH_CLASSIC -> BLUETOOTH
-                                    com.google.android.gms.fido.common.Transport.BLUETOOTH_LOW_ENERGY -> BLUETOOTH
-                                    com.google.android.gms.fido.common.Transport.NFC -> NFC
-                                    com.google.android.gms.fido.common.Transport.USB -> USB
-                                    com.google.android.gms.fido.common.Transport.INTERNAL -> SCREEN_LOCK
+                                    com.nyagoogle.android.gms.fido.common.Transport.BLUETOOTH_CLASSIC -> BLUETOOTH
+                                    com.nyagoogle.android.gms.fido.common.Transport.BLUETOOTH_LOW_ENERGY -> BLUETOOTH
+                                    com.nyagoogle.android.gms.fido.common.Transport.NFC -> NFC
+                                    com.nyagoogle.android.gms.fido.common.Transport.USB -> USB
+                                    com.nyagoogle.android.gms.fido.common.Transport.INTERNAL -> SCREEN_LOCK
                                     else -> null
                                 }
                                 if (allowedTransport != null && allowedTransport in IMPLEMENTED_TRANSPORTS)

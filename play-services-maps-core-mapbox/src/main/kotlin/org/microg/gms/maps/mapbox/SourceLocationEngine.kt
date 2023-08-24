@@ -10,8 +10,8 @@ import android.location.Location
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import com.google.android.gms.maps.internal.ILocationSourceDelegate
-import com.google.android.gms.maps.internal.IOnLocationChangeListener
+import com.nyagoogle.android.gms.maps.internal.ILocationSourceDelegate
+import com.nyagoogle.android.gms.maps.internal.IOnLocationChangeListener
 import com.mapbox.mapboxsdk.location.engine.LocationEngine
 import com.mapbox.mapboxsdk.location.engine.LocationEngineCallback
 import com.mapbox.mapboxsdk.location.engine.LocationEngineRequest

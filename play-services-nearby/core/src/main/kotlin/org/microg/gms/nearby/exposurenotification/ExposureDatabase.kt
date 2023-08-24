@@ -18,7 +18,11 @@ import android.os.Parcel
 import android.os.Parcelable
 import android.util.Log
 import androidx.core.content.FileProvider
-import com.google.android.gms.nearby.exposurenotification.*
+import com.nyagoogle.android.gms.nearby.exposurenotification.*
+import com.nyagoogle.android.gms.nearby.exposurenotification.DiagnosisKeysDataMapping
+import com.nyagoogle.android.gms.nearby.exposurenotification.ExposureConfiguration
+import com.nyagoogle.android.gms.nearby.exposurenotification.ReportType
+import com.nyagoogle.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import kotlinx.coroutines.*
 import okio.ByteString
 import org.microg.gms.common.PackageUtils
@@ -652,7 +656,8 @@ class ExposureDatabase private constructor(private val context: Context) : SQLit
     fun loadConfiguration(packageName: String, token: String, database: SQLiteDatabase = readableDatabase): Triple<Long, ExposureConfiguration?, DiagnosisKeysDataMapping?>? = database.run {
         query(TABLE_TOKENS, arrayOf("tid", "configuration", "diagnosisKeysDataMap"), "package = ? AND token = ?", arrayOf(packageName, token), null, null, null, null).use { cursor ->
             if (cursor.moveToNext()) {
-                val configuration = try {ExposureConfiguration.CREATOR.unmarshall(cursor.getBlob(1)) } catch (e: Exception) { null }
+                val configuration = try {
+                    ExposureConfiguration.CREATOR.unmarshall(cursor.getBlob(1)) } catch (e: Exception) { null }
                 val diagnosisKeysDataMapping = try { DiagnosisKeysDataMapping.CREATOR.unmarshall(cursor.getBlob(2)) }  catch (e: Exception) { null }
                 Triple(cursor.getLong(0), configuration, diagnosisKeysDataMapping)
             } else {

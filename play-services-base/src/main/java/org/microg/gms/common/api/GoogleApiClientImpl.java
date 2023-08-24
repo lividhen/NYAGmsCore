@@ -19,17 +19,16 @@ package org.microg.gms.common.api;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Looper;
-import android.os.Message;
 
 import androidx.fragment.app.FragmentActivity;
 
 import android.util.Log;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.common.ConnectionResult;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
 
 import java.util.HashMap;
 import java.util.HashSet;

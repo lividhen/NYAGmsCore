@@ -6,8 +6,8 @@
 package org.microg.gms.fido.core.protocol.msgs
 
 import android.util.Base64
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntity
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntity
 import com.upokecenter.cbor.CBORObject
 import org.microg.gms.fido.core.protocol.decodeAsPublicKeyCredentialDescriptor
 import org.microg.gms.fido.core.protocol.decodeAsPublicKeyCredentialUserEntity
@@ -22,13 +22,13 @@ class AuthenticatorGetAssertionCommand(request: AuthenticatorGetAssertionRequest
 }
 
 class AuthenticatorGetAssertionRequest(
-    val rpId: String,
-    val clientDataHash: ByteArray,
-    val allowList: List<PublicKeyCredentialDescriptor> = emptyList(),
-    val extensions: Map<String, CBORObject> = emptyMap(),
-    val options: Options? = null,
-    val pinAuth: ByteArray? = null,
-    val pinProtocol: Int? = null
+        val rpId: String,
+        val clientDataHash: ByteArray,
+        val allowList: List<PublicKeyCredentialDescriptor> = emptyList(),
+        val extensions: Map<String, CBORObject> = emptyMap(),
+        val options: Options? = null,
+        val pinAuth: ByteArray? = null,
+        val pinProtocol: Int? = null
 ) : Ctap2Request(0x02, CBORObject.NewMap().apply {
     set(0x01, rpId.encodeAsCbor())
     set(0x02, clientDataHash.encodeAsCbor())
@@ -58,11 +58,11 @@ class AuthenticatorGetAssertionRequest(
 }
 
 class AuthenticatorGetAssertionResponse(
-    val credential: PublicKeyCredentialDescriptor?,
-    val authData: ByteArray,
-    val signature: ByteArray,
-    val user: PublicKeyCredentialUserEntity?,
-    val numberOfCredentials: Int?
+        val credential: PublicKeyCredentialDescriptor?,
+        val authData: ByteArray,
+        val signature: ByteArray,
+        val user: PublicKeyCredentialUserEntity?,
+        val numberOfCredentials: Int?
 ) : Ctap2Response {
 
     companion object {

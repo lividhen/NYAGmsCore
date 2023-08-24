@@ -20,12 +20,12 @@ import android.content.Context
 import android.os.Bundle
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.maps.GoogleMapOptions
-import com.google.android.gms.maps.internal.IGoogleMapDelegate
-import com.google.android.gms.maps.internal.IMapViewDelegate
-import com.google.android.gms.maps.internal.IOnMapReadyCallback
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.maps.GoogleMapOptions
+import com.nyagoogle.android.gms.maps.internal.IGoogleMapDelegate
+import com.nyagoogle.android.gms.maps.internal.IMapViewDelegate
+import com.nyagoogle.android.gms.maps.internal.IOnMapReadyCallback
 
 class MapViewImpl(private val context: Context, options: GoogleMapOptions?) : IMapViewDelegate.Stub() {
 

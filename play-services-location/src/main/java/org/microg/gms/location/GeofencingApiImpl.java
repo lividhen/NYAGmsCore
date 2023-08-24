@@ -21,15 +21,15 @@ import android.os.RemoteException;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.Geofence;
-import com.google.android.gms.location.GeofencingApi;
-import com.google.android.gms.location.GeofencingRequest;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.internal.IGeofencerCallbacks;
-import com.google.android.gms.location.internal.ParcelableGeofence;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.location.Geofence;
+import com.nyagoogle.android.gms.location.GeofencingApi;
+import com.nyagoogle.android.gms.location.GeofencingRequest;
+import com.nyagoogle.android.gms.location.LocationServices;
+import com.nyagoogle.android.gms.location.internal.IGeofencerCallbacks;
+import com.nyagoogle.android.gms.location.internal.ParcelableGeofence;
 
 import org.microg.gms.common.GmsConnector;
 

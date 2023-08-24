@@ -13,7 +13,7 @@ import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
 import androidx.core.os.bundleOf
-import com.google.android.gms.ads.identifier.internal.IAdvertisingIdService
+import com.nyagoogle.android.gms.ads.identifier.internal.IAdvertisingIdService
 import org.microg.gms.common.PackageUtils
 import java.util.UUID
 
@@ -63,7 +63,7 @@ abstract class AdvertisingIdConfiguration(private val context: Context) {
             for (packageName in packageNames) {
                 val applicationInfo = context.packageManager.getApplicationInfo(packageName, 0)
                 if (applicationInfo.targetSdkVersion > 33) {
-                    if (context.packageManager.checkPermission("com.google.android.gms.permission.AD_ID", packageName) == PackageManager.PERMISSION_DENIED) {
+                    if (context.packageManager.checkPermission("com.nyagoogle.android.gms.permission.AD_ID", packageName) == PackageManager.PERMISSION_DENIED) {
                         throw SecurityException("Permission not granted")
                     }
                 }

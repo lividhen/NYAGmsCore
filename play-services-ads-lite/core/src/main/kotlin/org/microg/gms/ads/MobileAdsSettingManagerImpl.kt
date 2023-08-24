@@ -10,12 +10,12 @@ import android.os.Looper
 import android.os.Parcel
 import android.os.RemoteException
 import android.util.Log
-import com.google.android.gms.ads.internal.AdapterStatusParcel
-import com.google.android.gms.ads.internal.RequestConfigurationParcel
-import com.google.android.gms.ads.internal.client.IMobileAdsSettingManager
-import com.google.android.gms.ads.internal.client.IOnAdInspectorClosedListener
-import com.google.android.gms.ads.internal.initialization.IInitializationCallback
-import com.google.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.ads.internal.AdapterStatusParcel
+import com.nyagoogle.android.gms.ads.internal.RequestConfigurationParcel
+import com.nyagoogle.android.gms.ads.internal.client.IMobileAdsSettingManager
+import com.nyagoogle.android.gms.ads.internal.client.IOnAdInspectorClosedListener
+import com.nyagoogle.android.gms.ads.internal.initialization.IInitializationCallback
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
 import org.microg.gms.utils.warnOnTransactionIssues
 
 private const val TAG = "AdsSettingManager"
@@ -70,7 +70,7 @@ class MobileAdsSettingManagerImpl(private val context: Context?) : IMobileAdsSet
 
     override fun getAdapterStatus(): List<AdapterStatusParcel> {
         Log.d(TAG, "getAdapterStatus")
-        return arrayListOf(AdapterStatusParcel("com.google.android.gms.ads.MobileAds", true, 0, "Dummy"))
+        return arrayListOf(AdapterStatusParcel("com.nyagoogle.android.gms.ads.MobileAds", true, 0, "Dummy"))
     }
 
     override fun setRequestConfiguration(configuration: RequestConfigurationParcel?) {

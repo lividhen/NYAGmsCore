@@ -18,11 +18,11 @@ package org.microg.gms.maps.vtm.markup;
 
 import android.os.RemoteException;
 
-import com.google.android.gms.dynamic.IObjectWrapper;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.PatternItem;
-import com.google.android.gms.maps.model.PolygonOptions;
-import com.google.android.gms.maps.model.internal.IPolygonDelegate;
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper;
+import com.nyagoogle.android.gms.maps.model.LatLng;
+import com.nyagoogle.android.gms.maps.model.PatternItem;
+import com.nyagoogle.android.gms.maps.model.PolygonOptions;
+import com.nyagoogle.android.gms.maps.model.internal.IPolygonDelegate;
 
 import org.microg.gms.maps.vtm.GmsMapsTypeHelper;
 import org.oscim.core.GeoPoint;

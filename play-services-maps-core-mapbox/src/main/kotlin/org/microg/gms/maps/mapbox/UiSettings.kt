@@ -19,7 +19,7 @@ package org.microg.gms.maps.mapbox
 import android.os.Parcel
 import android.util.Log
 
-import com.google.android.gms.maps.internal.IUiSettingsDelegate
+import com.nyagoogle.android.gms.maps.internal.IUiSettingsDelegate
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.UiSettings
 

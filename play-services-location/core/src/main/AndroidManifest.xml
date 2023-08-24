@@ -30,7 +30,7 @@
                  android:exported="true">
             <intent-filter>
                 <action android:name="com.google.android.location.reporting.service.START"/>
-                <action android:name="com.google.android.gms.location.reporting.service.START"/>
+                <action android:name="com.nyagoogle.android.gms.location.reporting.service.START"/>
 
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>

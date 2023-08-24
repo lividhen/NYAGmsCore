@@ -16,16 +16,16 @@ import android.util.Log
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.common.api.Status
-import com.google.android.gms.common.internal.GetServiceRequest
-import com.google.android.gms.common.internal.IGmsCallbacks
-import com.google.android.gms.safetynet.AttestationData
-import com.google.android.gms.safetynet.HarmfulAppsInfo
-import com.google.android.gms.safetynet.RecaptchaResultData
-import com.google.android.gms.safetynet.SafeBrowsingData
-import com.google.android.gms.safetynet.SafetyNetStatusCodes
-import com.google.android.gms.safetynet.internal.ISafetyNetCallbacks
-import com.google.android.gms.safetynet.internal.ISafetyNetService
+import com.nyagoogle.android.gms.common.api.Status
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks
+import com.nyagoogle.android.gms.safetynet.AttestationData
+import com.nyagoogle.android.gms.safetynet.HarmfulAppsInfo
+import com.nyagoogle.android.gms.safetynet.RecaptchaResultData
+import com.nyagoogle.android.gms.safetynet.SafeBrowsingData
+import com.nyagoogle.android.gms.safetynet.SafetyNetStatusCodes
+import com.nyagoogle.android.gms.safetynet.internal.ISafetyNetCallbacks
+import com.nyagoogle.android.gms.safetynet.internal.ISafetyNetService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.microg.gms.BaseService
@@ -39,7 +39,6 @@ import org.microg.gms.settings.SettingsContract.getSettings
 import org.microg.gms.utils.warnOnTransactionIssues
 import java.io.IOException
 import java.net.URLEncoder
-import java.util.*
 
 private const val TAG = "GmsSafetyNet"
 private const val DEFAULT_API_KEY = "AIzaSyDqVnJBjE5ymo--oBJt3On7HQx9xNm1RHA"

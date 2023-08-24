@@ -9,8 +9,8 @@ import android.content.Context;
 import android.os.IBinder;
 import android.os.RemoteException;
 
-import com.google.android.gms.oss.licenses.IOSSLicenseService;
-import com.google.android.gms.oss.licenses.License;
+import com.nyagoogle.android.gms.oss.licenses.IOSSLicenseService;
+import com.nyagoogle.android.gms.oss.licenses.License;
 
 import org.microg.gms.common.GmsClient;
 import org.microg.gms.common.GmsService;

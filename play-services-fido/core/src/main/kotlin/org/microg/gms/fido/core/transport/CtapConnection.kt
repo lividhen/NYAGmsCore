@@ -5,8 +5,6 @@
 
 package org.microg.gms.fido.core.transport
 
-import com.google.android.gms.fido.fido2.api.common.ErrorCode
-import org.microg.gms.fido.core.RequestHandlingException
 import org.microg.gms.fido.core.protocol.msgs.*
 
 const val CAPABILITY_CTAP_1 = 1 shl 0

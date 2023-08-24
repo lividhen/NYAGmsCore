@@ -10,8 +10,8 @@ import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import androidx.core.content.ContextCompat
-import com.google.android.gms.R
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationClient
+import com.nyagoogle.android.gms.R
+import com.nyagoogle.android.gms.nearby.exposurenotification.ExposureNotificationClient
 import org.microg.gms.nearby.exposurenotification.ExposurePreferences
 
 interface NearbyPreferencesIntegration {

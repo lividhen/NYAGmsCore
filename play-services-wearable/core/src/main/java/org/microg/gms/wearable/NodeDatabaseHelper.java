@@ -24,7 +24,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.google.android.gms.wearable.Asset;
+import com.nyagoogle.android.gms.wearable.Asset;
 
 import java.util.ArrayList;
 import java.util.List;

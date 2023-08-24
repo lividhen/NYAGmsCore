@@ -13,7 +13,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
-import android.location.LocationManager
 import android.os.Build.VERSION.SDK_INT
 import android.os.IBinder
 import android.util.Log
@@ -24,11 +23,15 @@ import androidx.core.location.LocationRequestCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.location.*
-import com.google.android.gms.location.Granularity.GRANULARITY_COARSE
-import com.google.android.gms.location.Granularity.GRANULARITY_FINE
-import com.google.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY
-import com.google.android.gms.location.internal.ClientIdentity
+import com.nyagoogle.android.gms.location.Granularity.GRANULARITY_COARSE
+import com.nyagoogle.android.gms.location.Granularity.GRANULARITY_FINE
+import com.nyagoogle.android.gms.location.ILocationCallback
+import com.nyagoogle.android.gms.location.LastLocationRequest
+import com.nyagoogle.android.gms.location.LocationAvailability
+import com.nyagoogle.android.gms.location.LocationAvailabilityRequest
+import com.nyagoogle.android.gms.location.LocationRequest
+import com.nyagoogle.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY
+import com.nyagoogle.android.gms.location.internal.ClientIdentity
 import org.microg.gms.location.*
 import org.microg.gms.utils.IntentCacheManager
 import java.io.PrintWriter
@@ -107,11 +110,11 @@ class LocationManager(private val context: Context, private val lifecycle: Lifec
     }
 
     suspend fun updateBinderRequest(
-        clientIdentity: ClientIdentity,
-        oldBinder: IBinder,
-        binder: IBinder,
-        callback: ILocationCallback,
-        request: LocationRequest
+            clientIdentity: ClientIdentity,
+            oldBinder: IBinder,
+            binder: IBinder,
+            callback: ILocationCallback,
+            request: LocationRequest
     ) {
         request.verify(context, clientIdentity)
         requestManager.update(oldBinder, binder, clientIdentity, callback, request, lastLocationCapsule)

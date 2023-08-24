@@ -18,7 +18,7 @@ package org.microg.gms.maps.vtm.markup;
 
 import android.content.Context;
 
-import com.google.android.gms.maps.model.LatLng;
+import com.nyagoogle.android.gms.maps.model.LatLng;
 
 import org.oscim.layers.marker.MarkerItem;
 

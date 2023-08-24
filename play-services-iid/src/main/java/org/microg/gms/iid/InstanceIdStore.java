@@ -28,7 +28,7 @@ import java.security.spec.X509EncodedKeySpec;
 
 public class InstanceIdStore {
     private static final String TAG = "InstanceID/Store";
-    private static final String PREF_NAME = "com.google.android.gms.appid";
+    private static final String PREF_NAME = "com.nyagoogle.android.gms.appid";
 
     private Context context;
     private SharedPreferences sharedPreferences;

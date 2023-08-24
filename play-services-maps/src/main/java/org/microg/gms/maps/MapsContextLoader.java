@@ -10,19 +10,19 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
 import androidx.annotation.Nullable;
-import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.dynamic.ObjectWrapper;
-import com.google.android.gms.dynamite.DynamiteModule;
-import com.google.android.gms.maps.MapsInitializer;
-import com.google.android.gms.maps.internal.ICreator;
-import com.google.android.gms.maps.model.RuntimeRemoteException;
+import com.nyagoogle.android.gms.common.GooglePlayServicesUtil;
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper;
+import com.nyagoogle.android.gms.dynamite.DynamiteModule;
+import com.nyagoogle.android.gms.maps.MapsInitializer;
+import com.nyagoogle.android.gms.maps.internal.ICreator;
+import com.nyagoogle.android.gms.maps.model.RuntimeRemoteException;
 import org.microg.gms.common.Constants;
 
 public class MapsContextLoader {
     private static final String TAG = "MapsContextLoader";
-    private static final String DYNAMITE_MODULE_DEFAULT = "com.google.android.gms.maps_dynamite";
-    private static final String DYNAMITE_MODULE_LEGACY = "com.google.android.gms.maps_legacy_dynamite";
-    private static final String DYNAMITE_MODULE_LATEST = "com.google.android.gms.maps_core_dynamite";
+    private static final String DYNAMITE_MODULE_DEFAULT = "com.nyagoogle.android.gms.maps_dynamite";
+    private static final String DYNAMITE_MODULE_LEGACY = "com.nyagoogle.android.gms.maps_legacy_dynamite";
+    private static final String DYNAMITE_MODULE_LATEST = "com.nyagoogle.android.gms.maps_core_dynamite";
 
     private static Context mapsContext;
     private static ICreator creator;
@@ -67,15 +67,15 @@ public class MapsContextLoader {
             Log.d(TAG, "Making Creator dynamically");
             try {
                 Context mapsContext = getMapsContext(context, preferredRenderer);
-                Class<?> clazz = mapsContext.getClassLoader().loadClass("com.google.android.gms.maps.internal.CreatorImpl");
+                Class<?> clazz = mapsContext.getClassLoader().loadClass("com.nyagoogle.android.gms.maps.internal.CreatorImpl");
                 creator = ICreator.Stub.asInterface((IBinder) clazz.newInstance());
                 creator.initV2(ObjectWrapper.wrap(mapsContext.getResources()), Constants.GMS_VERSION_CODE);
             } catch (ClassNotFoundException e) {
-                throw new IllegalStateException("Unable to find dynamic class com.google.android.gms.maps.internal.CreatorImpl");
+                throw new IllegalStateException("Unable to find dynamic class com.nyagoogle.android.gms.maps.internal.CreatorImpl");
             } catch (IllegalAccessException e) {
-                throw new IllegalStateException("Unable to call the default constructor of com.google.android.gms.maps.internal.CreatorImpl");
+                throw new IllegalStateException("Unable to call the default constructor of com.nyagoogle.android.gms.maps.internal.CreatorImpl");
             } catch (InstantiationException e) {
-                throw new IllegalStateException("Unable to instantiate the dynamic class com.google.android.gms.maps.internal.CreatorImpl");
+                throw new IllegalStateException("Unable to instantiate the dynamic class com.nyagoogle.android.gms.maps.internal.CreatorImpl");
             } catch (RemoteException e) {
                 throw new RuntimeRemoteException(e);
             }

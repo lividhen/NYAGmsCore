@@ -10,7 +10,7 @@ import com.android.volley.NetworkResponse
 import com.android.volley.VolleyError
 import com.android.volley.toolbox.RequestFuture
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.droidguard.internal.DroidGuardResultsRequest
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardResultsRequest
 import dalvik.system.DexClassLoader
 import okio.ByteString.Companion.decodeHex
 import okio.ByteString.Companion.of

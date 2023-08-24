@@ -25,7 +25,7 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.core.location.LocationManagerCompat
 import androidx.lifecycle.LifecycleService
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationClient
+import com.nyagoogle.android.gms.nearby.exposurenotification.ExposureNotificationClient
 import org.microg.gms.common.ForegroundServiceContext
 import org.microg.gms.common.ForegroundServiceInfo
 import org.microg.gms.nearby.core.R

@@ -22,7 +22,7 @@ import android.content.pm.PackageManager;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.gms.R;
+import com.nyagoogle.android.gms.R;
 
 import org.microg.gms.common.Constants;
 import org.microg.gms.common.PackageUtils;

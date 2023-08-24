@@ -18,13 +18,12 @@ package org.microg.gms.maps.mapbox.model
 
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.dynamic.unwrap
-import com.google.android.gms.maps.model.Dash
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.PatternItem
-import com.google.android.gms.maps.model.internal.ICircleDelegate
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.dynamic.unwrap
+import com.nyagoogle.android.gms.maps.model.LatLng
+import com.nyagoogle.android.gms.maps.model.PatternItem
+import com.nyagoogle.android.gms.maps.model.internal.ICircleDelegate
 import com.mapbox.geojson.LineString
 import com.mapbox.geojson.Point
 import com.mapbox.mapboxsdk.plugins.annotation.*
@@ -39,7 +38,7 @@ import org.microg.gms.maps.mapbox.LiteGoogleMapImpl
 import org.microg.gms.maps.mapbox.utils.toPoint
 import org.microg.gms.maps.mapbox.getName
 import org.microg.gms.maps.mapbox.makeBitmap
-import com.google.android.gms.maps.model.CircleOptions as GmsCircleOptions
+import com.nyagoogle.android.gms.maps.model.CircleOptions as GmsCircleOptions
 
 val NORTH_POLE: Point = Point.fromLngLat(0.0, 90.0)
 val SOUTH_POLE: Point = Point.fromLngLat(0.0, -90.0)

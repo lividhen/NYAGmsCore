@@ -4,10 +4,10 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.RectF
-import com.google.android.gms.maps.model.Dash
-import com.google.android.gms.maps.model.Dot
-import com.google.android.gms.maps.model.Gap
-import com.google.android.gms.maps.model.PatternItem
+import com.nyagoogle.android.gms.maps.model.Dash
+import com.nyagoogle.android.gms.maps.model.Dot
+import com.nyagoogle.android.gms.maps.model.Gap
+import com.nyagoogle.android.gms.maps.model.PatternItem
 import kotlin.math.max
 
 fun PatternItem.getName(): String = when (this) {

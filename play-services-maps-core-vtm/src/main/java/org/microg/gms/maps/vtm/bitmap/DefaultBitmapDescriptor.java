@@ -25,7 +25,7 @@ import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Paint;
 
-import com.google.android.gms.dynamic.ObjectWrapper;
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper;
 
 import org.microg.gms.maps.vtm.ResourcesContainer;
 import org.microg.gms.maps.vtm.R;

@@ -9,7 +9,7 @@
 
     <application>
         <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:name="com.nyagoogle.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
     </application>

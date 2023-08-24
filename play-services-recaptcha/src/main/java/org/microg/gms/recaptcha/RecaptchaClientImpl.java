@@ -9,28 +9,26 @@ import android.content.Context;
 import android.os.RemoteException;
 
 import android.util.Log;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApi;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.recaptcha.Recaptcha;
-import com.google.android.gms.recaptcha.RecaptchaAction;
-import com.google.android.gms.recaptcha.RecaptchaClient;
-import com.google.android.gms.recaptcha.RecaptchaHandle;
-import com.google.android.gms.recaptcha.RecaptchaResultData;
-import com.google.android.gms.recaptcha.VerificationHandle;
-import com.google.android.gms.recaptcha.VerificationResult;
-import com.google.android.gms.recaptcha.internal.ExecuteParams;
-import com.google.android.gms.recaptcha.internal.ExecuteResults;
-import com.google.android.gms.recaptcha.internal.ICloseCallback;
-import com.google.android.gms.recaptcha.internal.IExecuteCallback;
-import com.google.android.gms.recaptcha.internal.IInitCallback;
-import com.google.android.gms.recaptcha.internal.InitParams;
-import com.google.android.gms.recaptcha.internal.InitResults;
-import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.Tasks;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.GoogleApi;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.recaptcha.RecaptchaAction;
+import com.nyagoogle.android.gms.recaptcha.RecaptchaClient;
+import com.nyagoogle.android.gms.recaptcha.RecaptchaHandle;
+import com.nyagoogle.android.gms.recaptcha.RecaptchaResultData;
+import com.nyagoogle.android.gms.recaptcha.VerificationHandle;
+import com.nyagoogle.android.gms.recaptcha.VerificationResult;
+import com.nyagoogle.android.gms.recaptcha.internal.ExecuteParams;
+import com.nyagoogle.android.gms.recaptcha.internal.ExecuteResults;
+import com.nyagoogle.android.gms.recaptcha.internal.ICloseCallback;
+import com.nyagoogle.android.gms.recaptcha.internal.IExecuteCallback;
+import com.nyagoogle.android.gms.recaptcha.internal.IInitCallback;
+import com.nyagoogle.android.gms.recaptcha.internal.InitParams;
+import com.nyagoogle.android.gms.recaptcha.internal.InitResults;
+import com.nyagoogle.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.tasks.Tasks;
 
 import org.microg.gms.common.api.PendingGoogleApiCall;
-import org.microg.gms.tasks.TaskImpl;
 
 public class RecaptchaClientImpl extends GoogleApi<Api.ApiOptions.NoOptions> implements RecaptchaClient {
     private int openHandles = 0;

@@ -9,12 +9,12 @@ import android.app.PendingIntent;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApi;
-import com.google.android.gms.location.GeofencingClient;
-import com.google.android.gms.location.GeofencingRequest;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.GoogleApi;
+import com.nyagoogle.android.gms.location.GeofencingClient;
+import com.nyagoogle.android.gms.location.GeofencingRequest;
+import com.nyagoogle.android.gms.location.LocationServices;
+import com.nyagoogle.android.gms.tasks.Task;
 
 import java.util.List;
 

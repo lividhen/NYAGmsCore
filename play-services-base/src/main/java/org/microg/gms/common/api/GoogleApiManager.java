@@ -7,12 +7,11 @@ package org.microg.gms.common.api;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.DeadObjectException;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApi;
-import com.google.android.gms.tasks.TaskCompletionSource;
+import com.nyagoogle.android.gms.common.ConnectionResult;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.GoogleApi;
+import com.nyagoogle.android.gms.tasks.TaskCompletionSource;
 
 import java.util.ArrayList;
 import java.util.HashMap;

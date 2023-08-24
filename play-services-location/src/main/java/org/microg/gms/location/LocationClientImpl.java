@@ -24,17 +24,17 @@ import android.os.Looper;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.GeofencingRequest;
-import com.google.android.gms.location.ILocationListener;
-import com.google.android.gms.location.LocationAvailability;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationResult;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.internal.IGeofencerCallbacks;
-import com.google.android.gms.location.internal.ParcelableGeofence;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.location.GeofencingRequest;
+import com.nyagoogle.android.gms.location.ILocationListener;
+import com.nyagoogle.android.gms.location.LocationAvailability;
+import com.nyagoogle.android.gms.location.LocationCallback;
+import com.nyagoogle.android.gms.location.LocationListener;
+import com.nyagoogle.android.gms.location.LocationRequest;
+import com.nyagoogle.android.gms.location.LocationResult;
+import com.nyagoogle.android.gms.location.LocationServices;
+import com.nyagoogle.android.gms.location.internal.IGeofencerCallbacks;
+import com.nyagoogle.android.gms.location.internal.ParcelableGeofence;
 
 import org.microg.gms.common.api.ConnectionCallbacks;
 import org.microg.gms.common.api.GoogleApiClientImpl;

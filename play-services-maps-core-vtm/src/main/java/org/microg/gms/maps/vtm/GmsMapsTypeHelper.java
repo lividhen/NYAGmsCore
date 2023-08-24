@@ -16,9 +16,9 @@
 
 package org.microg.gms.maps.vtm;
 
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
+import com.nyagoogle.android.gms.maps.model.CameraPosition;
+import com.nyagoogle.android.gms.maps.model.LatLng;
+import com.nyagoogle.android.gms.maps.model.LatLngBounds;
 
 import org.oscim.core.BoundingBox;
 import org.oscim.core.Box;

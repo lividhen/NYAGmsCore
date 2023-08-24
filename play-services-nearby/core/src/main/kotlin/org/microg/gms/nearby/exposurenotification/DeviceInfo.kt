@@ -12,7 +12,7 @@ import android.os.Build.DEVICE
 import android.os.Build.MANUFACTURER
 import android.os.Build.MODEL
 import android.util.Log
-import com.google.android.gms.nearby.exposurenotification.CalibrationConfidence
+import com.nyagoogle.android.gms.nearby.exposurenotification.CalibrationConfidence
 import kotlin.math.roundToInt
 
 data class DeviceInfo(val oem: String, val device: String, val model: String, val rssiCorrection: Byte, val txPowerCorrection: Byte, @CalibrationConfidence val confidence: Int = CalibrationConfidence.MEDIUM)

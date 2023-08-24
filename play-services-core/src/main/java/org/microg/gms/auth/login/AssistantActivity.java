@@ -29,7 +29,7 @@ import android.widget.TextView;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.R;
+import com.nyagoogle.android.gms.R;
 
 public abstract class AssistantActivity extends AppCompatActivity {
     private static final int TITLE_MIN_HEIGHT = 64;

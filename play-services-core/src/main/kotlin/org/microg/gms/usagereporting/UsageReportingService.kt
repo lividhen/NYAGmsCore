@@ -5,19 +5,18 @@
 
 package org.microg.gms.usagereporting
 
-import android.os.Bundle
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.common.Feature
-import com.google.android.gms.common.api.CommonStatusCodes
-import com.google.android.gms.common.api.Status
-import com.google.android.gms.common.internal.ConnectionInfo
-import com.google.android.gms.common.internal.GetServiceRequest
-import com.google.android.gms.common.internal.IGmsCallbacks
-import com.google.android.gms.usagereporting.UsageReportingOptInOptions
-import com.google.android.gms.usagereporting.internal.IUsageReportingCallbacks
-import com.google.android.gms.usagereporting.internal.IUsageReportingOptInOptionsChangedListener
-import com.google.android.gms.usagereporting.internal.IUsageReportingService
+import com.nyagoogle.android.gms.common.Feature
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes
+import com.nyagoogle.android.gms.common.api.Status
+import com.nyagoogle.android.gms.common.internal.ConnectionInfo
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks
+import com.nyagoogle.android.gms.usagereporting.UsageReportingOptInOptions
+import com.nyagoogle.android.gms.usagereporting.internal.IUsageReportingCallbacks
+import com.nyagoogle.android.gms.usagereporting.internal.IUsageReportingOptInOptionsChangedListener
+import com.nyagoogle.android.gms.usagereporting.internal.IUsageReportingService
 import org.microg.gms.BaseService
 import org.microg.gms.common.GmsService
 import org.microg.gms.utils.warnOnTransactionIssues

@@ -18,9 +18,9 @@ package org.microg.gms.common.api;
 
 import android.os.Looper;
 
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Result;
-import com.google.android.gms.common.api.ResultCallback;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Result;
+import com.nyagoogle.android.gms.common.api.ResultCallback;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

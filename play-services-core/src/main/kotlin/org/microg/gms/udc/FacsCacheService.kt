@@ -7,12 +7,12 @@ package org.microg.gms.udc
 
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.common.api.Status
-import com.google.android.gms.common.internal.GetServiceRequest
-import com.google.android.gms.common.internal.IGmsCallbacks
-import com.google.android.gms.facs.cache.FacsCacheCallOptions
-import com.google.android.gms.facs.cache.internal.IFacsCacheCallbacks
-import com.google.android.gms.facs.cache.internal.IFacsCacheService
+import com.nyagoogle.android.gms.common.api.Status
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks
+import com.nyagoogle.android.gms.facs.cache.FacsCacheCallOptions
+import com.nyagoogle.android.gms.facs.cache.internal.IFacsCacheCallbacks
+import com.nyagoogle.android.gms.facs.cache.internal.IFacsCacheService
 import org.microg.gms.BaseService
 import org.microg.gms.common.GmsService
 import org.microg.gms.utils.warnOnTransactionIssues

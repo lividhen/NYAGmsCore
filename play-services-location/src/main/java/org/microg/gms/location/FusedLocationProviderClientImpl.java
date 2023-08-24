@@ -11,12 +11,18 @@ import android.location.Location;
 import android.os.Looper;
 
 import androidx.annotation.NonNull;
-import com.google.android.gms.location.*;
-import com.google.android.gms.tasks.CancellationToken;
-import com.google.android.gms.tasks.Task;
+
+import com.nyagoogle.android.gms.location.CurrentLocationRequest;
+import com.nyagoogle.android.gms.location.FusedLocationProviderClient;
+import com.nyagoogle.android.gms.location.LastLocationRequest;
+import com.nyagoogle.android.gms.location.LocationAvailability;
+import com.nyagoogle.android.gms.location.LocationCallback;
+import com.nyagoogle.android.gms.location.LocationListener;
+import com.nyagoogle.android.gms.location.LocationRequest;
+import com.nyagoogle.android.gms.tasks.CancellationToken;
+import com.nyagoogle.android.gms.tasks.Task;
 
 import org.microg.gms.common.api.ReturningGoogleApiCall;
-import org.microg.gms.common.api.PendingGoogleApiCall;
 import org.microg.gms.common.api.VoidReturningGoogleApiCall;
 
 import java.util.concurrent.Executor;

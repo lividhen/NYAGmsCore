@@ -18,13 +18,12 @@ package org.microg.gms.location;
 
 import android.app.PendingIntent;
 import android.os.RemoteException;
-import android.util.Log;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.ActivityRecognitionApi;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.location.ActivityRecognition;
+import com.nyagoogle.android.gms.location.ActivityRecognitionApi;
 
 import org.microg.gms.common.GmsConnector;
 

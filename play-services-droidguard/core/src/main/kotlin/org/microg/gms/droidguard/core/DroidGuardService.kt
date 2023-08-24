@@ -4,7 +4,7 @@
  */
 package org.microg.gms.droidguard.core
 
-import com.google.android.gms.droidguard.DroidGuardChimeraService
+import com.nyagoogle.android.gms.droidguard.DroidGuardChimeraService
 import org.microg.gms.chimera.ServiceLoader
 import org.microg.gms.chimera.ServiceProxy
 

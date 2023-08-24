@@ -18,8 +18,6 @@ package org.microg.gms.auth;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
-import android.accounts.AuthenticatorException;
-import android.accounts.OperationCanceledException;
 import android.annotation.SuppressLint;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -34,15 +32,15 @@ import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
-import com.google.android.auth.IAuthManagerService;
-import com.google.android.gms.R;
-import com.google.android.gms.auth.AccountChangeEventsRequest;
-import com.google.android.gms.auth.AccountChangeEventsResponse;
-import com.google.android.gms.auth.GetHubTokenInternalResponse;
-import com.google.android.gms.auth.GetHubTokenRequest;
-import com.google.android.gms.auth.HasCababilitiesRequest;
-import com.google.android.gms.auth.TokenData;
-import com.google.android.gms.common.api.Scope;
+import com.nyagoogle.android.auth.IAuthManagerService;
+import com.nyagoogle.android.gms.R;
+import com.nyagoogle.android.gms.auth.AccountChangeEventsRequest;
+import com.nyagoogle.android.gms.auth.AccountChangeEventsResponse;
+import com.nyagoogle.android.gms.auth.GetHubTokenInternalResponse;
+import com.nyagoogle.android.gms.auth.GetHubTokenRequest;
+import com.nyagoogle.android.gms.auth.HasCababilitiesRequest;
+import com.nyagoogle.android.gms.auth.TokenData;
+import com.nyagoogle.android.gms.common.api.Scope;
 
 import org.microg.gms.common.PackageUtils;
 

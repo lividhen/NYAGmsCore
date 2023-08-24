@@ -24,8 +24,8 @@ import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
 
-import com.google.android.gms.maps.internal.ISnapshotReadyCallback;
-import com.google.android.gms.maps.model.CameraPosition;
+import com.nyagoogle.android.gms.maps.internal.ISnapshotReadyCallback;
+import com.nyagoogle.android.gms.maps.model.CameraPosition;
 
 import org.microg.gms.maps.vtm.camera.CameraUpdate;
 import org.microg.gms.maps.vtm.markup.DrawableMarkup;

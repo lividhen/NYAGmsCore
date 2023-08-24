@@ -6,10 +6,10 @@
 package org.microg.gms.fido.core.protocol.msgs
 
 import android.util.Base64
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialParameters
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialRpEntity
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntity
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialParameters
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialRpEntity
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntity
 import com.upokecenter.cbor.CBORObject
 import org.microg.gms.fido.core.protocol.encodeAsCbor
 import org.microg.gms.utils.toBase64
@@ -22,15 +22,15 @@ class AuthenticatorMakeCredentialCommand(request: AuthenticatorMakeCredentialReq
 }
 
 class AuthenticatorMakeCredentialRequest(
-    val clientDataHash: ByteArray,
-    val rp: PublicKeyCredentialRpEntity,
-    val user: PublicKeyCredentialUserEntity,
-    val pubKeyCredParams: List<PublicKeyCredentialParameters>,
-    val excludeList: List<PublicKeyCredentialDescriptor> = emptyList(),
-    val extensions: Map<String, CBORObject> = emptyMap(),
-    val options: Options? = null,
-    val pinAuth: ByteArray? = null,
-    val pinProtocol: Int? = null
+        val clientDataHash: ByteArray,
+        val rp: PublicKeyCredentialRpEntity,
+        val user: PublicKeyCredentialUserEntity,
+        val pubKeyCredParams: List<PublicKeyCredentialParameters>,
+        val excludeList: List<PublicKeyCredentialDescriptor> = emptyList(),
+        val extensions: Map<String, CBORObject> = emptyMap(),
+        val options: Options? = null,
+        val pinAuth: ByteArray? = null,
+        val pinProtocol: Int? = null
 ) : Ctap2Request(0x01, CBORObject.NewMap().apply {
     set(0x01, clientDataHash.encodeAsCbor())
     set(0x02, rp.encodeAsCbor())

@@ -5,12 +5,11 @@
 
 package org.microg.gms.oss.licenses.core
 
-import android.content.Context
-import com.google.android.gms.common.api.CommonStatusCodes.SUCCESS
-import com.google.android.gms.common.internal.GetServiceRequest
-import com.google.android.gms.common.internal.IGmsCallbacks
-import com.google.android.gms.oss.licenses.IOSSLicenseService
-import com.google.android.gms.oss.licenses.License
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes.SUCCESS
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks
+import com.nyagoogle.android.gms.oss.licenses.IOSSLicenseService
+import com.nyagoogle.android.gms.oss.licenses.License
 import org.microg.gms.BaseService
 import org.microg.gms.common.GmsService
 

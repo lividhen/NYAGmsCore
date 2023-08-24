@@ -2,7 +2,7 @@ package org.microg.gms.safetynet
 
 import android.os.Parcel
 import android.os.Parcelable
-import com.google.android.gms.common.api.Status
+import com.nyagoogle.android.gms.common.api.Status
 import kotlin.properties.Delegates
 
 data class SafetyNetSummary(

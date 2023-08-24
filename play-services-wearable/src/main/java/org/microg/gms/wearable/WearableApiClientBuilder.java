@@ -19,7 +19,7 @@ package org.microg.gms.wearable;
 import android.content.Context;
 import android.os.Looper;
 
-import com.google.android.gms.wearable.Wearable;
+import com.nyagoogle.android.gms.wearable.Wearable;
 
 import org.microg.gms.common.api.ApiClientBuilder;
 import org.microg.gms.common.api.ApiClientSettings;

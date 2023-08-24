@@ -24,12 +24,12 @@ import android.os.RemoteException;
 import android.util.Log;
 import android.view.LayoutInflater;
 
-import com.google.android.gms.dynamic.IObjectWrapper;
-import com.google.android.gms.dynamic.ObjectWrapper;
-import com.google.android.gms.maps.GoogleMapOptions;
-import com.google.android.gms.maps.internal.IGoogleMapDelegate;
-import com.google.android.gms.maps.internal.IMapViewDelegate;
-import com.google.android.gms.maps.internal.IOnMapReadyCallback;
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper;
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper;
+import com.nyagoogle.android.gms.maps.GoogleMapOptions;
+import com.nyagoogle.android.gms.maps.internal.IGoogleMapDelegate;
+import com.nyagoogle.android.gms.maps.internal.IMapViewDelegate;
+import com.nyagoogle.android.gms.maps.internal.IOnMapReadyCallback;
 
 public class MapViewImpl extends IMapViewDelegate.Stub {
     private static final String TAG = "GmsMapViewImpl";

@@ -12,9 +12,15 @@ import androidx.annotation.RequiresApi
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.getSystemService
 import androidx.fragment.app.FragmentActivity
-import com.google.android.gms.fido.fido2.api.common.*
-import com.google.android.gms.safetynet.SafetyNet
-import com.google.android.gms.tasks.await
+import com.nyagoogle.android.gms.fido.fido2.api.common.*
+import com.nyagoogle.android.gms.safetynet.SafetyNet
+import com.nyagoogle.android.gms.tasks.await
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.EC2Algorithm
+import com.nyagoogle.android.gms.fido.fido2.api.common.ErrorCode
+import com.nyagoogle.android.gms.fido.fido2.api.common.RequestOptions
 import kotlinx.coroutines.suspendCancellableCoroutine
 import org.microg.gms.common.Constants
 import org.microg.gms.fido.core.*
@@ -71,9 +77,9 @@ class ScreenLockTransportHandler(private val activity: FragmentActivity, callbac
     }
 
     suspend fun getActiveSignature(
-        options: RequestOptions,
-        callingPackage: String,
-        keyId: ByteArray
+            options: RequestOptions,
+            callingPackage: String,
+            keyId: ByteArray
     ): Signature {
         val signature =
             store.getSignature(options.rpId, keyId) ?: throw RequestHandlingException(ErrorCode.INVALID_STATE_ERR)
@@ -102,8 +108,8 @@ class ScreenLockTransportHandler(private val activity: FragmentActivity, callbac
     )
 
     suspend fun register(
-        options: RequestOptions,
-        callerPackage: String
+            options: RequestOptions,
+            callerPackage: String
     ): AuthenticatorAttestationResponse {
         if (options.type != RequestOptionsType.REGISTER) throw RequestHandlingException(ErrorCode.INVALID_STATE_ERR)
         for (descriptor in options.registerOptions.excludeList.orEmpty()) {
@@ -185,8 +191,8 @@ class ScreenLockTransportHandler(private val activity: FragmentActivity, callbac
     }
 
     suspend fun sign(
-        options: RequestOptions,
-        callerPackage: String
+            options: RequestOptions,
+            callerPackage: String
     ): AuthenticatorAssertionResponse {
         if (options.type != RequestOptionsType.SIGN) throw RequestHandlingException(ErrorCode.INVALID_STATE_ERR)
         val candidates = mutableListOf<CredentialId>()

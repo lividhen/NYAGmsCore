@@ -22,15 +22,15 @@ import android.os.Looper;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.FusedLocationProviderApi;
-import com.google.android.gms.location.LocationAvailability;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.location.FusedLocationProviderApi;
+import com.nyagoogle.android.gms.location.LocationAvailability;
+import com.nyagoogle.android.gms.location.LocationCallback;
+import com.nyagoogle.android.gms.location.LocationListener;
+import com.nyagoogle.android.gms.location.LocationRequest;
+import com.nyagoogle.android.gms.location.LocationServices;
 
 import org.microg.gms.common.GmsConnector;
 

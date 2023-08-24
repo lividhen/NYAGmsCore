@@ -6,7 +6,6 @@
 package org.microg.gms.nearby.exposurenotification
 
 import android.os.ParcelUuid
-import com.google.android.gms.nearby.exposurenotification.CalibrationConfidence
 import java.util.*
 
 const val TAG = "ExposureNotification"
@@ -33,7 +32,7 @@ const val CONFIRM_ACTION_STOP = "stop"
 const val CONFIRM_ACTION_KEYS = "keys"
 const val CONFIRM_PERMISSION_VALIDITY = 60 * 60 * 1000L
 
-const val PERMISSION_EXPOSURE_CALLBACK = "com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK"
+const val PERMISSION_EXPOSURE_CALLBACK = "com.nyagoogle.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK"
 
 const val TX_POWER_LOW = -15
 

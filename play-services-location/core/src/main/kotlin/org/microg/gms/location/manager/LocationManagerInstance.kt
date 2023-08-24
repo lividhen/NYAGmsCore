@@ -20,14 +20,35 @@ import androidx.core.content.getSystemService
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.common.api.CommonStatusCodes
-import com.google.android.gms.common.api.Status
-import com.google.android.gms.common.api.internal.IStatusCallback
-import com.google.android.gms.common.internal.ICancelToken
-import com.google.android.gms.location.*
-import com.google.android.gms.location.internal.*
-import com.google.android.gms.location.internal.DeviceOrientationRequestUpdateData.REMOVE_UPDATES
-import com.google.android.gms.location.internal.DeviceOrientationRequestUpdateData.REQUEST_UPDATES
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes
+import com.nyagoogle.android.gms.common.api.Status
+import com.nyagoogle.android.gms.common.api.internal.IStatusCallback
+import com.nyagoogle.android.gms.common.internal.ICancelToken
+import com.nyagoogle.android.gms.location.*
+import com.nyagoogle.android.gms.location.internal.*
+import com.nyagoogle.android.gms.location.ActivityRecognitionRequest
+import com.nyagoogle.android.gms.location.ActivityRecognitionResult
+import com.nyagoogle.android.gms.location.ActivityTransitionRequest
+import com.nyagoogle.android.gms.location.CurrentLocationRequest
+import com.nyagoogle.android.gms.location.DetectedActivity
+import com.nyagoogle.android.gms.location.GeofencingRequest
+import com.nyagoogle.android.gms.location.ILocationCallback
+import com.nyagoogle.android.gms.location.LastLocationRequest
+import com.nyagoogle.android.gms.location.LocationAvailability
+import com.nyagoogle.android.gms.location.LocationAvailabilityRequest
+import com.nyagoogle.android.gms.location.LocationRequest
+import com.nyagoogle.android.gms.location.LocationSettingsRequest
+import com.nyagoogle.android.gms.location.LocationSettingsResult
+import com.nyagoogle.android.gms.location.SleepSegmentRequest
+import com.nyagoogle.android.gms.location.internal.ClientIdentity
+import com.nyagoogle.android.gms.location.internal.DeviceOrientationRequestUpdateData
+import com.nyagoogle.android.gms.location.internal.DeviceOrientationRequestUpdateData.REMOVE_UPDATES
+import com.nyagoogle.android.gms.location.internal.DeviceOrientationRequestUpdateData.REQUEST_UPDATES
+import com.nyagoogle.android.gms.location.internal.FusedLocationProviderResult
+import com.nyagoogle.android.gms.location.internal.IFusedLocationProviderCallback
+import com.nyagoogle.android.gms.location.internal.IGeofencerCallbacks
+import com.nyagoogle.android.gms.location.internal.ISettingsCallbacks
+import com.nyagoogle.android.gms.location.internal.LocationReceiver
 import org.microg.gms.common.NonCancelToken
 import org.microg.gms.utils.warnOnTransactionIssues
 
@@ -202,11 +223,11 @@ class LocationManagerInstance(
     // region Location updates
 
     override fun registerLocationUpdates(
-        oldBinder: IBinder?,
-        binder: IBinder,
-        callback: ILocationCallback,
-        request: LocationRequest,
-        statusCallback: IStatusCallback
+            oldBinder: IBinder?,
+            binder: IBinder,
+            callback: ILocationCallback,
+            request: LocationRequest,
+            statusCallback: IStatusCallback
     ) {
         Log.d(TAG, "registerLocationUpdates (callback) by ${getClientIdentity().packageName}")
         checkHasAnyLocationPermission()

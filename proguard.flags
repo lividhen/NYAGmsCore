@@ -17,13 +17,13 @@
 -dontnote
 
 # Keep dynamically loaded GMS classes
--keep public class com.google.android.gms.maps.internal.CreatorImpl { public *; }
--keep public class com.google.android.gms.common.security.ProviderInstallerImpl { public *; }
--keep public class com.google.android.gms.plus.plusone.PlusOneButtonCreatorImpl { public *; }
--keep public class com.google.android.gms.dynamic.IObjectWrapper { public *; }
--keep public class com.google.android.gms.chimera.container.DynamiteLoaderImpl { public *; }
--keep public class com.google.android.gms.dynamite.descriptors.** { public *; }
--keep public class com.google.android.gms.cast.framework.internal.CastDynamiteModuleImpl { public *; }
+-keep public class com.nyagoogle.android.gms.maps.internal.CreatorImpl { public *; }
+-keep public class com.nyagoogle.android.gms.common.security.ProviderInstallerImpl { public *; }
+-keep public class com.nyagoogle.android.gms.plus.plusone.PlusOneButtonCreatorImpl { public *; }
+-keep public class com.nyagoogle.android.gms.dynamic.IObjectWrapper { public *; }
+-keep public class com.nyagoogle.android.gms.chimera.container.DynamiteLoaderImpl { public *; }
+-keep public class com.nyagoogle.android.gms.dynamite.descriptors.** { public *; }
+-keep public class com.nyagoogle.android.gms.cast.framework.internal.CastDynamiteModuleImpl { public *; }
 
 # Keep AutoSafeParcelables
 -keep public class * extends org.microg.safeparcel.AutoSafeParcelable {
@@ -39,7 +39,7 @@
 
 # Keep our stuff
 -keep class org.microg.** { *; }
--keep class com.google.android.gms.** { *; }
+-keep class com.nyagoogle.android.gms.** { *; }
 
 # Keep asInterface method cause it's accessed from SafeParcel
 -keepattributes InnerClasses

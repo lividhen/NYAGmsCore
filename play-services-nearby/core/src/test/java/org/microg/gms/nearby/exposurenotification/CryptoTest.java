@@ -6,7 +6,7 @@
 package org.microg.gms.nearby.exposurenotification;
 
 
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey;
+import com.nyagoogle.android.gms.nearby.exposurenotification.TemporaryExposureKey;
 
 import junit.framework.TestCase;
 

@@ -32,8 +32,7 @@ import android.util.Log;
 
 import androidx.legacy.content.WakefulBroadcastReceiver;
 
-import com.google.android.gms.R;
-import com.google.android.gms.checkin.internal.ICheckinService;
+import com.nyagoogle.android.gms.checkin.internal.ICheckinService;
 
 import org.microg.gms.auth.AuthConstants;
 import org.microg.gms.common.ForegroundServiceInfo;
@@ -47,7 +46,7 @@ public class CheckinService extends IntentService {
     public static final long MAX_VALID_CHECKIN_AGE = 24 * 60 * 60 * 1000; // 12 hours
     public static final long REGULAR_CHECKIN_INTERVAL = 12 * 60 * 60 * 1000; // 12 hours
     public static final long BACKUP_CHECKIN_DELAY = 3 * 60 * 60 * 1000; // 3 hours
-    public static final String BIND_ACTION = "com.google.android.gms.checkin.BIND_TO_SERVICE";
+    public static final String BIND_ACTION = "com.nyagoogle.android.gms.checkin.BIND_TO_SERVICE";
     public static final String EXTRA_FORCE_CHECKIN = "force";
     @Deprecated
     public static final String EXTRA_CALLBACK_INTENT = "callback";

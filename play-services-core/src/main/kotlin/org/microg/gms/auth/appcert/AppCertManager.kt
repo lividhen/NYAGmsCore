@@ -7,7 +7,6 @@ package org.microg.gms.auth.appcert
 
 import android.content.Context
 import android.database.Cursor
-import android.os.SystemClock
 import android.util.Base64
 import android.util.Log
 import com.android.volley.NetworkResponse
@@ -15,7 +14,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.VolleyError
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.BuildConfig
+import com.nyagoogle.android.gms.BuildConfig
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock

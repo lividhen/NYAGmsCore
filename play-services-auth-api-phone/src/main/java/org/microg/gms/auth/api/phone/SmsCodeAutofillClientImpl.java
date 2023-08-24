@@ -6,14 +6,14 @@
 package org.microg.gms.auth.api.phone;
 
 import android.content.Context;
-import com.google.android.gms.auth.api.phone.SmsCodeAutofillClient;
-import com.google.android.gms.auth.api.phone.internal.IAutofillPermissionStateCallback;
-import com.google.android.gms.auth.api.phone.internal.IOngoingSmsRequestCallback;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.common.api.GoogleApi;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.auth.api.phone.SmsCodeAutofillClient;
+import com.nyagoogle.android.gms.auth.api.phone.internal.IAutofillPermissionStateCallback;
+import com.nyagoogle.android.gms.auth.api.phone.internal.IOngoingSmsRequestCallback;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.ApiException;
+import com.nyagoogle.android.gms.common.api.GoogleApi;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.tasks.Task;
 import org.microg.gms.common.api.PendingGoogleApiCall;
 
 public class SmsCodeAutofillClientImpl extends GoogleApi<Api.ApiOptions.NoOptions> implements SmsCodeAutofillClient {

@@ -7,12 +7,12 @@ package org.microg.gms.droidguard;
 
 import android.content.Context;
 
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApi;
-import com.google.android.gms.droidguard.DroidGuardClient;
-import com.google.android.gms.droidguard.DroidGuardHandle;
-import com.google.android.gms.droidguard.internal.DroidGuardResultsRequest;
-import com.google.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.GoogleApi;
+import com.nyagoogle.android.gms.droidguard.DroidGuardClient;
+import com.nyagoogle.android.gms.droidguard.DroidGuardHandle;
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardResultsRequest;
+import com.nyagoogle.android.gms.tasks.Task;
 
 import org.microg.gms.common.api.ReturningGoogleApiCall;
 

@@ -5,7 +5,7 @@
 
 package org.microg.gms.common.api;
 
-import com.google.android.gms.tasks.TaskCompletionSource;
+import com.nyagoogle.android.gms.tasks.TaskCompletionSource;
 
 public interface ReturningGoogleApiCall<R, A extends ApiClient> extends PendingGoogleApiCall<R, A> {
     R execute(A client) throws Exception;

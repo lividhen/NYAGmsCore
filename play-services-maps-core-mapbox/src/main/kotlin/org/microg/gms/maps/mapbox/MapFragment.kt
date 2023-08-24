@@ -19,16 +19,14 @@ package org.microg.gms.maps.mapbox
 import android.app.Activity
 import android.os.Bundle
 import android.os.Parcel
-import android.util.Base64
 import android.util.Log
-import android.view.View
 import android.view.ViewGroup
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.maps.GoogleMapOptions
-import com.google.android.gms.maps.internal.IGoogleMapDelegate
-import com.google.android.gms.maps.internal.IMapFragmentDelegate
-import com.google.android.gms.maps.internal.IOnMapReadyCallback
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.maps.GoogleMapOptions
+import com.nyagoogle.android.gms.maps.internal.IGoogleMapDelegate
+import com.nyagoogle.android.gms.maps.internal.IMapFragmentDelegate
+import com.nyagoogle.android.gms.maps.internal.IOnMapReadyCallback
 
 class MapFragmentImpl(private val activity: Activity) : IMapFragmentDelegate.Stub() {
 

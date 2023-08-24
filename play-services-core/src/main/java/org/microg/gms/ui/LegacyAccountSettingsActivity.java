@@ -24,7 +24,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
 
-import com.google.android.gms.R;
+import com.nyagoogle.android.gms.R;
 
 import org.microg.gms.auth.AuthConstants;
 import org.microg.tools.ui.AbstractSettingsActivity;

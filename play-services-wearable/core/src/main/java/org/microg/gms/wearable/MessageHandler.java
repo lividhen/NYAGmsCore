@@ -20,9 +20,9 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.google.android.gms.wearable.Asset;
-import com.google.android.gms.wearable.ConnectionConfiguration;
-import com.google.android.gms.wearable.internal.MessageEventParcelable;
+import com.nyagoogle.android.gms.wearable.Asset;
+import com.nyagoogle.android.gms.wearable.ConnectionConfiguration;
+import com.nyagoogle.android.gms.wearable.internal.MessageEventParcelable;
 
 import org.microg.gms.profile.Build;
 import org.microg.gms.settings.SettingsContract;

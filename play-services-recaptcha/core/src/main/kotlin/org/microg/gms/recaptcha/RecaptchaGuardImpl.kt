@@ -11,10 +11,10 @@ import android.os.LocaleList
 import android.util.Log
 import com.android.volley.*
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.recaptcha.RecaptchaHandle
-import com.google.android.gms.recaptcha.RecaptchaResultData
-import com.google.android.gms.recaptcha.internal.ExecuteParams
-import com.google.android.gms.recaptcha.internal.InitParams
+import com.nyagoogle.android.gms.recaptcha.RecaptchaHandle
+import com.nyagoogle.android.gms.recaptcha.RecaptchaResultData
+import com.nyagoogle.android.gms.recaptcha.internal.ExecuteParams
+import com.nyagoogle.android.gms.recaptcha.internal.InitParams
 import com.squareup.wire.Message
 import com.squareup.wire.ProtoAdapter
 import kotlinx.coroutines.CompletableDeferred

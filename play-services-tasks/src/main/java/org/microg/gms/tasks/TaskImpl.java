@@ -7,22 +7,22 @@ package org.microg.gms.tasks;
 
 import android.app.Activity;
 
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.DuplicateTaskCompletionException;
-import com.google.android.gms.tasks.OnCanceledListener;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.RuntimeExecutionException;
-import com.google.android.gms.tasks.SuccessContinuation;
-import com.google.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.tasks.Continuation;
+import com.nyagoogle.android.gms.tasks.DuplicateTaskCompletionException;
+import com.nyagoogle.android.gms.tasks.OnCanceledListener;
+import com.nyagoogle.android.gms.tasks.OnCompleteListener;
+import com.nyagoogle.android.gms.tasks.OnFailureListener;
+import com.nyagoogle.android.gms.tasks.OnSuccessListener;
+import com.nyagoogle.android.gms.tasks.RuntimeExecutionException;
+import com.nyagoogle.android.gms.tasks.SuccessContinuation;
+import com.nyagoogle.android.gms.tasks.Task;
 
 import java.util.Queue;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import static com.google.android.gms.tasks.TaskExecutors.MAIN_THREAD;
+import static com.nyagoogle.android.gms.tasks.TaskExecutors.MAIN_THREAD;
 
 public class TaskImpl<TResult> extends Task<TResult> {
     private final Object lock = new Object();

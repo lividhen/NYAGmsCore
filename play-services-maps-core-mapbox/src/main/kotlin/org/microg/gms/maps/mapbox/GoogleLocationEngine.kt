@@ -8,10 +8,10 @@ package org.microg.gms.maps.mapbox
 import android.app.PendingIntent
 import android.content.Context
 import android.os.Looper
-import com.google.android.gms.location.LocationListener
-import com.google.android.gms.location.LocationRequest
-import com.google.android.gms.location.LocationServices
-import com.google.android.gms.location.Priority
+import com.nyagoogle.android.gms.location.LocationListener
+import com.nyagoogle.android.gms.location.LocationRequest
+import com.nyagoogle.android.gms.location.LocationServices
+import com.nyagoogle.android.gms.location.Priority
 import com.mapbox.mapboxsdk.location.engine.LocationEngine
 import com.mapbox.mapboxsdk.location.engine.LocationEngineCallback
 import com.mapbox.mapboxsdk.location.engine.LocationEngineRequest

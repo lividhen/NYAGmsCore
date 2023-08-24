@@ -8,12 +8,17 @@ import android.accounts.Account
 import android.content.Context
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.location.reporting.*
-import com.google.android.gms.location.reporting.internal.IReportingService
+import com.nyagoogle.android.gms.location.reporting.OptInRequest
+import com.nyagoogle.android.gms.location.reporting.ReportingState
+import com.nyagoogle.android.gms.location.reporting.SendDataRequest
+import com.nyagoogle.android.gms.location.reporting.UlrPrivateModeRequest
+import com.nyagoogle.android.gms.location.reporting.UploadRequest
+import com.nyagoogle.android.gms.location.reporting.UploadRequestResult
+import com.nyagoogle.android.gms.location.reporting.internal.IReportingService
 import org.microg.gms.common.PackageUtils
 import org.microg.gms.utils.warnOnTransactionIssues
 
-//import com.google.android.gms.location.places.PlaceReport;
+//import com.nyagoogle.android.gms.location.places.PlaceReport;
 class ReportingServiceInstance(private val context: Context, private val packageName: String) : IReportingService.Stub() {
 
     override fun getReportingState(account: Account): ReportingState {

@@ -15,13 +15,13 @@ import android.view.ViewGroup.LayoutParams
 import android.widget.FrameLayout
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.GoogleMapOptions
-import com.google.android.gms.maps.MapView
-import com.google.android.gms.maps.model.CameraPosition
-import com.google.android.gms.maps.model.Circle
-import com.google.android.gms.maps.model.CircleOptions
-import com.google.android.gms.maps.model.LatLng
+import com.nyagoogle.android.gms.maps.CameraUpdateFactory
+import com.nyagoogle.android.gms.maps.GoogleMapOptions
+import com.nyagoogle.android.gms.maps.MapView
+import com.nyagoogle.android.gms.maps.model.CameraPosition
+import com.nyagoogle.android.gms.maps.model.Circle
+import com.nyagoogle.android.gms.maps.model.CircleOptions
+import com.nyagoogle.android.gms.maps.model.LatLng
 import org.microg.gms.location.core.R
 import org.microg.gms.ui.resolveColor
 import kotlin.math.log2
@@ -101,7 +101,7 @@ class LocationMapPreference : Preference {
 
         val isAvailable: Boolean
             get() = try {
-                Class.forName("com.google.android.gms.maps.MapView")
+                Class.forName("com.nyagoogle.android.gms.maps.MapView")
                 true
             } catch (e: ClassNotFoundException) {
                 false

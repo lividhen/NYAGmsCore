@@ -8,8 +8,8 @@ package org.microg.safeparcel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
-import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import com.google.android.gms.common.internal.safeparcel.SafeParcelableCreatorAndWriter;
+import com.nyagoogle.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelableCreatorAndWriter;
 
 public abstract class AutoSafeParcelable extends AbstractSafeParcelable {
     private static final String TAG = "SafeParcel";

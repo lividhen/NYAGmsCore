@@ -18,8 +18,8 @@ package org.microg.gms.common.api;
 
 import android.util.Log;
 
-import com.google.android.gms.common.GooglePlayServicesClient;
-import com.google.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.GooglePlayServicesClient;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
 
 import org.microg.gms.common.ForwardConnectionCallbacks;
 import org.microg.gms.common.ForwardConnectionFailedListener;

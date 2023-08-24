@@ -5,10 +5,10 @@
 
 package org.microg.gms.recaptcha
 
-import com.google.android.gms.recaptcha.RecaptchaHandle
-import com.google.android.gms.recaptcha.RecaptchaResultData
-import com.google.android.gms.recaptcha.internal.ExecuteParams
-import com.google.android.gms.recaptcha.internal.InitParams
+import com.nyagoogle.android.gms.recaptcha.RecaptchaHandle
+import com.nyagoogle.android.gms.recaptcha.RecaptchaResultData
+import com.nyagoogle.android.gms.recaptcha.internal.ExecuteParams
+import com.nyagoogle.android.gms.recaptcha.internal.InitParams
 
 interface RecaptchaImpl {
     suspend fun init(params: InitParams): RecaptchaHandle

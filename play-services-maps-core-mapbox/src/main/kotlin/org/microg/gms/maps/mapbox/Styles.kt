@@ -6,8 +6,8 @@ import android.util.Log
 import androidx.annotation.ColorInt
 import androidx.annotation.FloatRange
 import androidx.core.graphics.ColorUtils
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.model.MapStyleOptions
+import com.nyagoogle.android.gms.maps.GoogleMap
+import com.nyagoogle.android.gms.maps.model.MapStyleOptions
 import com.google.gson.Gson
 import com.google.gson.JsonSyntaxException
 import com.google.gson.annotations.SerializedName
@@ -34,7 +34,7 @@ const val KEY_LAYER_PAINT = "paint"
 
 
 fun getStyle(
-    context: MapContext, mapType: Int, styleOptions: MapStyleOptions?, styleFromFileWorkaround: Boolean = false
+        context: MapContext, mapType: Int, styleOptions: MapStyleOptions?, styleFromFileWorkaround: Boolean = false
 ): Style.Builder {
 
     // TODO: Serve map style resources locally

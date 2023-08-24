@@ -20,7 +20,7 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.google.android.gms.location.places.internal.IGooglePlaceDetectionService;
+import com.nyagoogle.android.gms.location.places.internal.IGooglePlaceDetectionService;
 
 public class PlaceDetectionServiceImpl extends IGooglePlaceDetectionService.Stub{
     private static final String TAG = "GmsPlcDtctSvcImpl";

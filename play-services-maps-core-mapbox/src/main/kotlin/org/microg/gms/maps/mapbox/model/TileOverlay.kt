@@ -7,8 +7,8 @@ package org.microg.gms.maps.mapbox.model
 
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.maps.model.TileOverlayOptions
-import com.google.android.gms.maps.model.internal.ITileOverlayDelegate
+import com.nyagoogle.android.gms.maps.model.TileOverlayOptions
+import com.nyagoogle.android.gms.maps.model.internal.ITileOverlayDelegate
 import org.microg.gms.maps.mapbox.GoogleMapImpl
 import org.microg.gms.utils.warnOnTransactionIssues
 

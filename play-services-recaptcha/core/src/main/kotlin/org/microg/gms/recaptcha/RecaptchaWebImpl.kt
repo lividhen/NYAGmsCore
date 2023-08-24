@@ -25,12 +25,12 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.webkit.WebViewClientCompat
-import com.google.android.gms.recaptcha.RecaptchaHandle
-import com.google.android.gms.recaptcha.RecaptchaResultData
-import com.google.android.gms.recaptcha.internal.ExecuteParams
-import com.google.android.gms.recaptcha.internal.InitParams
-import com.google.android.gms.tasks.Task
-import com.google.android.gms.tasks.Tasks
+import com.nyagoogle.android.gms.recaptcha.RecaptchaHandle
+import com.nyagoogle.android.gms.recaptcha.RecaptchaResultData
+import com.nyagoogle.android.gms.recaptcha.internal.ExecuteParams
+import com.nyagoogle.android.gms.recaptcha.internal.InitParams
+import com.nyagoogle.android.gms.tasks.Task
+import com.nyagoogle.android.gms.tasks.Tasks
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import okio.ByteString
@@ -282,7 +282,7 @@ class RecaptchaWebImpl(private val context: Context, private val packageName: St
                 "java.nio.charset.Charset", "java.nio.charset.StandardCharsets",
                 "android.text.format.DateFormat", "java.util.Date", "java.util.Locale", "java.nio.ByteBuffer",
                 "android.os.BatteryManager", "android.media.AudioManager",
-                "com.google.android.gms.tasks.OnCompleteListener",
+                "com.nyagoogle.android.gms.tasks.OnCompleteListener",
                 "android.provider.Settings\$System" -> Class.forName(name)
 
                 else -> {

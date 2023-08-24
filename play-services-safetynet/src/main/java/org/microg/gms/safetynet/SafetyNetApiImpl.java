@@ -7,13 +7,12 @@ package org.microg.gms.safetynet;
 
 import android.os.RemoteException;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.safetynet.RecaptchaResultData;
-import com.google.android.gms.safetynet.SafetyNet;
-import com.google.android.gms.safetynet.SafetyNetApi;
-import com.google.android.gms.safetynet.internal.ISafetyNetCallbacks;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.safetynet.RecaptchaResultData;
+import com.nyagoogle.android.gms.safetynet.SafetyNet;
+import com.nyagoogle.android.gms.safetynet.SafetyNetApi;
 
 import org.microg.gms.common.GmsConnector;
 

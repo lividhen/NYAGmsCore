@@ -8,11 +8,11 @@ package org.microg.gms.nearby.exposurenotification
 import android.content.pm.PackageManager
 import android.os.Build.VERSION.SDK_INT
 import android.util.Log
-import com.google.android.gms.common.Feature
-import com.google.android.gms.common.internal.ConnectionInfo
-import com.google.android.gms.common.internal.GetServiceRequest
-import com.google.android.gms.common.internal.IGmsCallbacks
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationStatusCodes.*
+import com.nyagoogle.android.gms.common.Feature
+import com.nyagoogle.android.gms.common.internal.ConnectionInfo
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks
+import com.nyagoogle.android.gms.nearby.exposurenotification.ExposureNotificationStatusCodes.*
 import org.microg.gms.BaseService
 import org.microg.gms.common.GmsService
 import org.microg.gms.common.PackageUtils

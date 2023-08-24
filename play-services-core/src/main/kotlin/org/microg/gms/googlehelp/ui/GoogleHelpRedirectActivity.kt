@@ -9,7 +9,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.googlehelp.GoogleHelp
+import com.nyagoogle.android.gms.googlehelp.GoogleHelp
 
 private const val TAG = "GoogleHelpRedirect"
 

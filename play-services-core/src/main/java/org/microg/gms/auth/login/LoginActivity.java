@@ -45,7 +45,7 @@ import androidx.annotation.StringRes;
 import androidx.core.app.OnNewIntentProvider;
 import androidx.webkit.WebViewClientCompat;
 
-import com.google.android.gms.R;
+import com.nyagoogle.android.gms.R;
 
 import org.json.JSONArray;
 import org.microg.gms.auth.AuthConstants;

@@ -19,11 +19,9 @@ package org.microg.gms.wearable;
 import android.content.Context;
 import android.net.Uri;
 
-import com.google.android.gms.common.api.CommonStatusCodes;
-import com.google.android.gms.common.data.DataHolder;
-import com.google.android.gms.wearable.Node;
-import com.google.android.gms.wearable.WearableStatusCodes;
-import com.google.android.gms.wearable.internal.NodeParcelable;
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes;
+import com.nyagoogle.android.gms.common.data.DataHolder;
+import com.nyagoogle.android.gms.wearable.WearableStatusCodes;
 
 import org.microg.gms.common.PackageUtils;
 

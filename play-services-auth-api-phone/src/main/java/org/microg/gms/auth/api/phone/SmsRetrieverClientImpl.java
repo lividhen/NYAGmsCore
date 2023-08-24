@@ -8,8 +8,8 @@ package org.microg.gms.auth.api.phone;
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.gms.auth.api.phone.SmsRetrieverClient;
-import com.google.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.auth.api.phone.SmsRetrieverClient;
+import com.nyagoogle.android.gms.tasks.Task;
 import org.microg.gms.common.api.PendingGoogleApiCall;
 
 public class SmsRetrieverClientImpl extends SmsRetrieverClient {

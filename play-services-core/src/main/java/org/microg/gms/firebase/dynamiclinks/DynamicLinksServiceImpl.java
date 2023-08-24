@@ -22,12 +22,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.content.Context;
 
-import com.google.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.common.api.Status;
 
-import com.google.firebase.dynamiclinks.internal.IDynamicLinksService;
-import com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks;
-import com.google.firebase.dynamiclinks.internal.DynamicLinkData;
-import com.google.firebase.dynamiclinks.internal.ShortDynamicLinkImpl;
+import com.nyagoogle.firebase.dynamiclinks.internal.IDynamicLinksService;
+import com.nyagoogle.firebase.dynamiclinks.internal.IDynamicLinksCallbacks;
+import com.nyagoogle.firebase.dynamiclinks.internal.ShortDynamicLinkImpl;
 
 
 public class DynamicLinksServiceImpl extends IDynamicLinksService.Stub {

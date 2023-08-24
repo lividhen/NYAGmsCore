@@ -8,8 +8,8 @@ package org.microg.gms.location.manager
 import android.location.Location
 import android.os.SystemClock
 import androidx.core.location.LocationCompat
-import com.google.android.gms.location.Granularity
-import com.google.android.gms.location.Granularity.GRANULARITY_COARSE
+import com.nyagoogle.android.gms.location.Granularity
+import com.nyagoogle.android.gms.location.Granularity.GRANULARITY_COARSE
 import java.security.SecureRandom
 import kotlin.math.cos
 import kotlin.math.max

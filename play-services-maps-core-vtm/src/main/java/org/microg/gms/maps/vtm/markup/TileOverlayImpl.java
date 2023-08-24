@@ -17,7 +17,7 @@
 package org.microg.gms.maps.vtm.markup;
 
 import android.os.RemoteException;
-import com.google.android.gms.maps.model.internal.ITileOverlayDelegate;
+import com.nyagoogle.android.gms.maps.model.internal.ITileOverlayDelegate;
 
 public class TileOverlayImpl extends ITileOverlayDelegate.Stub {
     @Override

@@ -5,10 +5,10 @@
 package org.microg.gms.location.reporting
 
 import android.os.RemoteException
-import com.google.android.gms.common.api.CommonStatusCodes
-import com.google.android.gms.common.internal.ConnectionInfo
-import com.google.android.gms.common.internal.GetServiceRequest
-import com.google.android.gms.common.internal.IGmsCallbacks
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes
+import com.nyagoogle.android.gms.common.internal.ConnectionInfo
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks
 import org.microg.gms.BaseService
 import org.microg.gms.common.GmsService
 import org.microg.gms.common.PackageUtils

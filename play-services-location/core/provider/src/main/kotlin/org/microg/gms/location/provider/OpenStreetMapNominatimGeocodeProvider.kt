@@ -15,7 +15,7 @@ import com.android.location.provider.GeocodeProvider
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.location.internal.ClientIdentity
+import com.nyagoogle.android.gms.location.internal.ClientIdentity
 import org.json.JSONObject
 import org.microg.address.Formatter
 import org.microg.gms.location.LocationSettings

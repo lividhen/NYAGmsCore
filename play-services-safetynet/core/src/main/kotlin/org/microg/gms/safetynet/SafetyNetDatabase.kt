@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.os.Build.VERSION.SDK_INT
 import android.util.Log
-import com.google.android.gms.common.api.Status
+import com.nyagoogle.android.gms.common.api.Status
 
 class SafetyNetDatabase(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION) {
 

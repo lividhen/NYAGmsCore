@@ -9,7 +9,7 @@ import android.text.format.DateUtils
 import android.widget.Toast
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import com.google.android.gms.R
+import com.nyagoogle.android.gms.R
 import org.json.JSONException
 import org.json.JSONObject
 import org.microg.gms.firebase.auth.getStringOrNull

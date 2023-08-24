@@ -7,8 +7,8 @@ package org.microg.gms.ads.rewarded
 
 import android.os.Bundle
 import android.util.Log
-import com.google.android.gms.ads.internal.AdapterResponseInfoParcel
-import com.google.android.gms.ads.internal.client.IResponseInfo
+import com.nyagoogle.android.gms.ads.internal.AdapterResponseInfoParcel
+import com.nyagoogle.android.gms.ads.internal.client.IResponseInfo
 
 private const val TAG = "RewardedAdResponseInfo"
 

@@ -7,9 +7,9 @@ package org.microg.gms.chimera
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
-import com.google.android.chimera.Service.ProxyCallbacks
+import com.nyagoogle.android.chimera.Service.ProxyCallbacks
 import android.os.IBinder
-import com.google.android.chimera.Service
+import com.nyagoogle.android.chimera.Service
 import java.io.FileDescriptor
 import java.io.PrintWriter
 

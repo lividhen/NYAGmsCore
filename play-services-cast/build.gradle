@@ -8,13 +8,13 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 android {
-    namespace "com.google.android.gms.cast"
+    namespace "com.nyagoogle.android.gms.cast"
 
     compileSdkVersion androidCompileSdk
     buildToolsVersion "$androidBuildVersionTools"
 
-    aidlPackagedList "com/google/android/gms/cast/ApplicationMetadata.aidl"
-    aidlPackagedList "com/google/android/gms/cast/LaunchOptions.aidl"
+    aidlPackagedList "com/nyagoogle/android/gms/cast/ApplicationMetadata.aidl"
+    aidlPackagedList "com/nyagoogle/android/gms/cast/LaunchOptions.aidl"
 
     buildFeatures {
         aidl = true

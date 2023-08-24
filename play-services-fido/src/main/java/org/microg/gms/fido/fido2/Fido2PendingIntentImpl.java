@@ -9,7 +9,7 @@ import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.IntentSender;
 
-import com.google.android.gms.fido.fido2.Fido2PendingIntent;
+import com.nyagoogle.android.gms.fido.fido2.Fido2PendingIntent;
 
 public class Fido2PendingIntentImpl implements Fido2PendingIntent {
     private PendingIntent pendingIntent;

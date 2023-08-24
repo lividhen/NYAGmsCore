@@ -11,10 +11,10 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.dynamic.unwrap
-import com.google.android.gms.maps.internal.IInfoWindowAdapter
-import com.google.android.gms.maps.model.internal.IMarkerDelegate
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.dynamic.unwrap
+import com.nyagoogle.android.gms.maps.internal.IInfoWindowAdapter
+import com.nyagoogle.android.gms.maps.model.internal.IMarkerDelegate
 import com.mapbox.android.gestures.Utils
 import org.microg.gms.maps.mapbox.AbstractGoogleMap
 import org.microg.gms.maps.mapbox.GoogleMapImpl

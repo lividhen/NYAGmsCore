@@ -8,7 +8,7 @@ package org.microg.gms.location.provider
 import android.content.Context
 import android.location.GeocoderParams
 import android.os.Build.VERSION.SDK_INT
-import com.google.android.gms.location.internal.ClientIdentity
+import com.nyagoogle.android.gms.location.internal.ClientIdentity
 
 const val TAG = "LocationProvider"
 

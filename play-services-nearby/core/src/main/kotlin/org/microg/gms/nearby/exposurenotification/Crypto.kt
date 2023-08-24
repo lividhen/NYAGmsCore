@@ -6,8 +6,7 @@
 package org.microg.gms.nearby.exposurenotification
 
 import android.annotation.TargetApi
-import android.util.Log
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
+import com.nyagoogle.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.charset.StandardCharsets

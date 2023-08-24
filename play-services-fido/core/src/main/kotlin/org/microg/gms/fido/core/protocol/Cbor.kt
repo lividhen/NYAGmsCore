@@ -4,11 +4,11 @@
  */
 package org.microg.gms.fido.core.protocol
 
-import com.google.android.gms.fido.common.Transport
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialParameters
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialRpEntity
-import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntity
+import com.nyagoogle.android.gms.fido.common.Transport
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialParameters
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialRpEntity
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntity
 import com.upokecenter.cbor.CBORObject
 
 fun CBORObject.AsStringSequence(): Iterable<String> = Iterable {

@@ -21,9 +21,9 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.google.android.gms.dynamic.IObjectWrapper;
-import com.google.android.gms.dynamic.ObjectWrapper;
-import com.google.android.gms.maps.model.internal.IBitmapDescriptorFactoryDelegate;
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper;
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper;
+import com.nyagoogle.android.gms.maps.model.internal.IBitmapDescriptorFactoryDelegate;
 
 public class BitmapDescriptorFactoryImpl extends IBitmapDescriptorFactoryDelegate.Stub {
     private static final String TAG = "GmsBitmapDescFactory";

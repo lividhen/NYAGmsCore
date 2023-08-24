@@ -15,10 +15,10 @@ import android.nfc.tech.IsoDep
 import android.util.Log
 import androidx.core.app.OnNewIntentProvider
 import androidx.core.util.Consumer
-import com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse
-import com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse
-import com.google.android.gms.fido.fido2.api.common.AuthenticatorResponse
-import com.google.android.gms.fido.fido2.api.common.RequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.RequestOptions
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CompletableDeferred
 import org.microg.gms.fido.core.RequestOptionsType
@@ -50,9 +50,9 @@ class NfcTransportHandler(private val activity: Activity, callback: TransportHan
     }
 
     suspend fun register(
-        options: RequestOptions,
-        callerPackage: String,
-        tag: Tag
+            options: RequestOptions,
+            callerPackage: String,
+            tag: Tag
     ): AuthenticatorAttestationResponse {
         return CtapNfcConnection(activity, tag).open {
             register(it, activity, options, callerPackage)
@@ -60,9 +60,9 @@ class NfcTransportHandler(private val activity: Activity, callback: TransportHan
     }
 
     suspend fun sign(
-        options: RequestOptions,
-        callerPackage: String,
-        tag: Tag
+            options: RequestOptions,
+            callerPackage: String,
+            tag: Tag
     ): AuthenticatorAssertionResponse {
         return CtapNfcConnection(activity, tag).open {
             sign(it, activity, options, callerPackage)
@@ -71,9 +71,9 @@ class NfcTransportHandler(private val activity: Activity, callback: TransportHan
 
 
     suspend fun handle(
-        options: RequestOptions,
-        callerPackage: String,
-        tag: Tag
+            options: RequestOptions,
+            callerPackage: String,
+            tag: Tag
     ): AuthenticatorResponse {
         return when (options.type) {
             RequestOptionsType.REGISTER -> register(options, callerPackage, tag)

@@ -6,7 +6,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    namespace "com.google.android.gms.gcm"
+    namespace "com.nyagoogle.android.gms.gcm"
 
     compileSdkVersion androidCompileSdk
     buildToolsVersion "$androidBuildVersionTools"

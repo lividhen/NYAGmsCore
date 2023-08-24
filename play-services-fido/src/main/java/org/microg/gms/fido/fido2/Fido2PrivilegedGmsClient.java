@@ -9,11 +9,11 @@ import android.content.Context;
 import android.os.IBinder;
 import android.os.RemoteException;
 
-import com.google.android.gms.fido.fido2.api.IBooleanCallback;
-import com.google.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialCreationOptions;
-import com.google.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialRequestOptions;
-import com.google.android.gms.fido.fido2.internal.privileged.IFido2PrivilegedCallbacks;
-import com.google.android.gms.fido.fido2.internal.privileged.IFido2PrivilegedService;
+import com.nyagoogle.android.gms.fido.fido2.api.IBooleanCallback;
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialCreationOptions;
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialRequestOptions;
+import com.nyagoogle.android.gms.fido.fido2.internal.privileged.IFido2PrivilegedCallbacks;
+import com.nyagoogle.android.gms.fido.fido2.internal.privileged.IFido2PrivilegedService;
 
 import org.microg.gms.common.GmsClient;
 import org.microg.gms.common.GmsService;

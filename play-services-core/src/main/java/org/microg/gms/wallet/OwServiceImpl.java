@@ -22,10 +22,10 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.wallet.IsReadyToPayRequest;
-import com.google.android.gms.wallet.internal.IOwService;
-import com.google.android.gms.wallet.internal.IWalletServiceCallbacks;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.wallet.IsReadyToPayRequest;
+import com.nyagoogle.android.gms.wallet.internal.IOwService;
+import com.nyagoogle.android.gms.wallet.internal.IWalletServiceCallbacks;
 
 public class OwServiceImpl extends IOwService.Stub {
     private static final String TAG = "GmsWalletOwSvc";

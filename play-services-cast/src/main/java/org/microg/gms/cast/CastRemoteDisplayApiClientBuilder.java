@@ -19,7 +19,7 @@ package org.microg.gms.cast;
 import android.content.Context;
 import android.os.Looper;
 
-import com.google.android.gms.cast.CastRemoteDisplay;
+import com.nyagoogle.android.gms.cast.CastRemoteDisplay;
 
 import org.microg.gms.common.DummyApiClient;
 import org.microg.gms.common.api.ApiClientBuilder;

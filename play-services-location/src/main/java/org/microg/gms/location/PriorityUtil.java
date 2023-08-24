@@ -6,7 +6,7 @@
 package org.microg.gms.location;
 
 import androidx.annotation.NonNull;
-import com.google.android.gms.location.Priority;
+import com.nyagoogle.android.gms.location.Priority;
 
 public class PriorityUtil {
     public static boolean isValidPriority(@Priority int priority) {

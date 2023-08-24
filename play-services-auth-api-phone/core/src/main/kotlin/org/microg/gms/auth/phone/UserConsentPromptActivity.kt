@@ -6,24 +6,16 @@
 package org.microg.gms.auth.phone
 
 import android.annotation.TargetApi
-import android.app.Activity
-import android.app.Dialog
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.*
-import android.telephony.SmsMessage
 import android.text.Html
-import android.text.TextUtils
-import android.util.Log
 import android.view.Gravity
 import android.view.ViewGroup.LayoutParams
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.os.bundleOf
-import com.google.android.gms.auth.api.phone.SmsRetriever
+import com.nyagoogle.android.gms.auth.api.phone.SmsRetriever
 import org.microg.gms.utils.getApplicationLabel
 
 private const val TAG = "UserConsentPrompt"

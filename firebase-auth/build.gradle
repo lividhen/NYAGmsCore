@@ -6,7 +6,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'com.google.firebase.auth'
+    namespace 'com.nyagoogle.firebase.auth'
     compileSdkVersion androidCompileSdk
     buildToolsVersion "$androidBuildVersionTools"
 

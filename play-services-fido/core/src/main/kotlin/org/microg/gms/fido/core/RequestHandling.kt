@@ -11,9 +11,16 @@ import android.util.Base64
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.fido.fido2.api.common.*
-import com.google.android.gms.fido.fido2.api.common.ErrorCode.*
+import com.nyagoogle.android.gms.fido.fido2.api.common.ErrorCode.*
 import com.google.common.net.InternetDomainName
+import com.nyagoogle.android.gms.fido.fido2.api.common.AttestationConveyancePreference
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialCreationOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialRequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.BrowserRequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.ErrorCode
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialCreationOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialRequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.RequestOptions
 import kotlinx.coroutines.CompletableDeferred
 import org.json.JSONArray
 import org.json.JSONObject
@@ -246,9 +253,9 @@ fun getFacetId(context: Context, options: RequestOptions, callingPackage: String
 fun ByteArray.digest(md: String): ByteArray = MessageDigest.getInstance(md).digest(this)
 
 fun getClientDataAndHash(
-    context: Context,
-    options: RequestOptions,
-    callingPackage: String
+        context: Context,
+        options: RequestOptions,
+        callingPackage: String
 ): Pair<ByteArray, ByteArray> {
     val clientData: ByteArray?
     var clientDataHash = (options as? BrowserPublicKeyCredentialCreationOptions)?.clientDataHash

@@ -11,10 +11,10 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
-import android.util.SparseArray;
-import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
-import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
-import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
+
+import com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelReader;
+import com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelable;
 import org.microg.gms.common.Hide;
 
 import java.lang.reflect.*;

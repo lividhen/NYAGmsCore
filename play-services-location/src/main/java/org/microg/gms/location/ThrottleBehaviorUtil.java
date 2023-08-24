@@ -6,7 +6,7 @@
 package org.microg.gms.location;
 
 import androidx.annotation.NonNull;
-import com.google.android.gms.location.ThrottleBehavior;
+import com.nyagoogle.android.gms.location.ThrottleBehavior;
 
 public class ThrottleBehaviorUtil {
     public static boolean isValidThrottleBehavior(@ThrottleBehavior int throttleBehavior) {

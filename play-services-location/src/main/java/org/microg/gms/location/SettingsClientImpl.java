@@ -7,11 +7,10 @@ package org.microg.gms.location;
 
 import android.content.Context;
 
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApi;
-import com.google.android.gms.location.GeofencingClient;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.SettingsClient;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.GoogleApi;
+import com.nyagoogle.android.gms.location.LocationServices;
+import com.nyagoogle.android.gms.location.SettingsClient;
 
 public class SettingsClientImpl extends GoogleApi<Api.ApiOptions.NoOptions> implements SettingsClient {
     public SettingsClientImpl(Context context) {

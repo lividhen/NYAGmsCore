@@ -18,10 +18,10 @@ import javax.lang.model.element.TypeElement
 import javax.lang.model.element.VariableElement
 import javax.tools.Diagnostic
 
-const val SafeParcelable = "com.google.android.gms.common.internal.safeparcel.SafeParcelable"
-const val SafeParcelReader = "com.google.android.gms.common.internal.safeparcel.SafeParcelReader"
-const val SafeParcelWriter = "com.google.android.gms.common.internal.safeparcel.SafeParcelWriter"
-const val SafeParcelableCreatorAndWriter = "com.google.android.gms.common.internal.safeparcel.SafeParcelableCreatorAndWriter"
+const val SafeParcelable = "com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelable"
+const val SafeParcelReader = "com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelReader"
+const val SafeParcelWriter = "com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelWriter"
+const val SafeParcelableCreatorAndWriter = "com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelableCreatorAndWriter"
 
 const val Field = "java.lang.reflect.Field"
 

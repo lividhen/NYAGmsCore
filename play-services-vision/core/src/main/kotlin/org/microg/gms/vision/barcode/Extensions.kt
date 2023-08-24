@@ -6,7 +6,7 @@
 package org.microg.gms.vision.barcode
 
 import android.graphics.Point
-import com.google.android.gms.vision.barcode.Barcode
+import com.nyagoogle.android.gms.vision.barcode.Barcode
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
 import com.google.zxing.ResultPoint

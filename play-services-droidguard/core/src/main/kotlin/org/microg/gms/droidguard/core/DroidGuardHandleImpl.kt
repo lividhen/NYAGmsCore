@@ -11,9 +11,9 @@ import android.os.ConditionVariable
 import android.os.ParcelFileDescriptor
 import android.os.Parcelable
 import android.util.Log
-import com.google.android.gms.droidguard.internal.DroidGuardInitReply
-import com.google.android.gms.droidguard.internal.DroidGuardResultsRequest
-import com.google.android.gms.droidguard.internal.IDroidGuardHandle
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardInitReply
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardResultsRequest
+import com.nyagoogle.android.gms.droidguard.internal.IDroidGuardHandle
 import org.microg.gms.droidguard.GuardCallback
 import java.io.FileNotFoundException
 

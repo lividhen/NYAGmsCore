@@ -14,14 +14,14 @@ import org.microg.gms.common.GmsService;
 import org.microg.gms.common.api.ConnectionCallbacks;
 import org.microg.gms.common.api.OnConnectionFailedListener;
 
-import com.google.android.gms.recaptcha.RecaptchaAction;
-import com.google.android.gms.recaptcha.RecaptchaHandle;
-import com.google.android.gms.recaptcha.internal.ExecuteParams;
-import com.google.android.gms.recaptcha.internal.ICloseCallback;
-import com.google.android.gms.recaptcha.internal.IExecuteCallback;
-import com.google.android.gms.recaptcha.internal.IInitCallback;
-import com.google.android.gms.recaptcha.internal.IRecaptchaService;
-import com.google.android.gms.recaptcha.internal.InitParams;
+import com.nyagoogle.android.gms.recaptcha.RecaptchaAction;
+import com.nyagoogle.android.gms.recaptcha.RecaptchaHandle;
+import com.nyagoogle.android.gms.recaptcha.internal.ExecuteParams;
+import com.nyagoogle.android.gms.recaptcha.internal.ICloseCallback;
+import com.nyagoogle.android.gms.recaptcha.internal.IExecuteCallback;
+import com.nyagoogle.android.gms.recaptcha.internal.IInitCallback;
+import com.nyagoogle.android.gms.recaptcha.internal.IRecaptchaService;
+import com.nyagoogle.android.gms.recaptcha.internal.InitParams;
 
 public class RecaptchaGmsClient extends GmsClient<IRecaptchaService> {
     public RecaptchaGmsClient(Context context, ConnectionCallbacks callbacks, OnConnectionFailedListener connectionFailedListener) {

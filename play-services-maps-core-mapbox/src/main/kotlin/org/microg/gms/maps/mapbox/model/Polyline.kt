@@ -6,12 +6,12 @@
 package org.microg.gms.maps.mapbox.model
 
 import android.os.Parcel
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.maps.model.Cap
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.PatternItem
-import com.google.android.gms.maps.model.internal.IPolylineDelegate
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.maps.model.Cap
+import com.nyagoogle.android.gms.maps.model.LatLng
+import com.nyagoogle.android.gms.maps.model.PatternItem
+import com.nyagoogle.android.gms.maps.model.internal.IPolylineDelegate
 import com.mapbox.mapboxsdk.plugins.annotation.Line
 import com.mapbox.mapboxsdk.plugins.annotation.LineOptions
 import com.mapbox.mapboxsdk.utils.ColorUtils
@@ -19,7 +19,7 @@ import org.microg.gms.maps.mapbox.GoogleMapImpl
 import org.microg.gms.maps.mapbox.LiteGoogleMapImpl
 import org.microg.gms.maps.mapbox.utils.toMapbox
 import org.microg.gms.utils.warnOnTransactionIssues
-import com.google.android.gms.maps.model.PolylineOptions as GmsLineOptions
+import com.nyagoogle.android.gms.maps.model.PolylineOptions as GmsLineOptions
 
 abstract class AbstractPolylineImpl(private val id: String, options: GmsLineOptions, private val dpiFactor: Function0<Float>) : IPolylineDelegate.Stub() {
     internal var points: List<LatLng> = ArrayList(options.points)

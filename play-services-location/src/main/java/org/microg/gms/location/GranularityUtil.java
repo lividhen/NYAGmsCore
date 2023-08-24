@@ -5,8 +5,7 @@
 
 package org.microg.gms.location;
 
-import com.google.android.gms.location.Granularity;
-import com.google.android.gms.location.Priority;
+import com.nyagoogle.android.gms.location.Granularity;
 
 public class GranularityUtil {
     public static boolean isValidGranularity(int granularity) {

@@ -17,7 +17,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceViewHolder
-import com.google.android.gms.nearby.exposurenotification.ExposureConfiguration
+import com.nyagoogle.android.gms.nearby.exposurenotification.ExposureConfiguration
 import org.json.JSONObject
 import org.microg.gms.nearby.core.R
 import org.microg.gms.nearby.exposurenotification.ExposureDatabase

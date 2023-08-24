@@ -8,12 +8,12 @@ package org.microg.gms.pay;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Context;
-import com.google.android.gms.common.api.Api;
-import com.google.android.gms.common.api.GoogleApi;
-import com.google.android.gms.pay.PayApiAvailabilityStatus;
-import com.google.android.gms.pay.PayClient;
-import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.Tasks;
+import com.nyagoogle.android.gms.common.api.Api;
+import com.nyagoogle.android.gms.common.api.GoogleApi;
+import com.nyagoogle.android.gms.pay.PayApiAvailabilityStatus;
+import com.nyagoogle.android.gms.pay.PayClient;
+import com.nyagoogle.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.tasks.Tasks;
 
 public class PayClientImpl extends GoogleApi<Api.ApiOptions.NotRequiredOptions> implements PayClient {
     private static final Api<Api.ApiOptions.NotRequiredOptions> API = new Api<>((options, context, looper, clientSettings, callbacks, connectionFailedListener) -> new PayApiClient(context, callbacks, connectionFailedListener));

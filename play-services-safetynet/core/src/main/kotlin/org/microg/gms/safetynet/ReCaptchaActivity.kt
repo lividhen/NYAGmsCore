@@ -20,7 +20,7 @@ import android.webkit.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.webkit.WebViewClientCompat
-import com.google.android.gms.safetynet.SafetyNetStatusCodes.*
+import com.nyagoogle.android.gms.safetynet.SafetyNetStatusCodes.*
 import org.microg.gms.droidguard.core.DroidGuardResultCreator
 import org.microg.gms.profile.Build
 import org.microg.gms.profile.ProfileManager

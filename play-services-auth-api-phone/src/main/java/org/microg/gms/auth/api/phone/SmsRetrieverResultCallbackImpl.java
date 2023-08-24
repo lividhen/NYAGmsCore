@@ -5,10 +5,10 @@
 
 package org.microg.gms.auth.api.phone;
 
-import com.google.android.gms.auth.api.phone.internal.ISmsRetrieverResultCallback;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.tasks.TaskCompletionSource;
+import com.nyagoogle.android.gms.auth.api.phone.internal.ISmsRetrieverResultCallback;
+import com.nyagoogle.android.gms.common.api.ApiException;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.tasks.TaskCompletionSource;
 
 class SmsRetrieverResultCallbackImpl extends ISmsRetrieverResultCallback.Stub {
     private final TaskCompletionSource<Void> completionSource;

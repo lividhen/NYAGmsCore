@@ -7,7 +7,7 @@ package org.microg.gms.common.api;
 
 import android.app.Activity;
 
-import com.google.android.gms.common.ConnectionResult;
+import com.nyagoogle.android.gms.common.ConnectionResult;
 
 public interface OnConnectionFailedListener {
     /**

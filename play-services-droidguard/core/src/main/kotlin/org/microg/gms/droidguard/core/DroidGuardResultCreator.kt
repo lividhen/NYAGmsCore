@@ -9,9 +9,8 @@ import android.content.Context
 import com.android.volley.VolleyError
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.droidguard.DroidGuardClient
-import com.google.android.gms.tasks.Task
-import com.google.android.gms.tasks.await
+import com.nyagoogle.android.gms.droidguard.DroidGuardClient
+import com.nyagoogle.android.gms.tasks.await
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine

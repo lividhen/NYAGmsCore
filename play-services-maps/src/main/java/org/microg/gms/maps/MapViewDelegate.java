@@ -13,14 +13,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.gms.dynamic.ObjectWrapper;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.internal.IGoogleMapDelegate;
-import com.google.android.gms.maps.internal.IMapViewDelegate;
-import com.google.android.gms.maps.internal.IOnMapReadyCallback;
-import com.google.android.gms.maps.internal.MapLifecycleDelegate;
-import com.google.android.gms.maps.model.RuntimeRemoteException;
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper;
+import com.nyagoogle.android.gms.maps.GoogleMap;
+import com.nyagoogle.android.gms.maps.OnMapReadyCallback;
+import com.nyagoogle.android.gms.maps.internal.IGoogleMapDelegate;
+import com.nyagoogle.android.gms.maps.internal.IMapViewDelegate;
+import com.nyagoogle.android.gms.maps.internal.IOnMapReadyCallback;
+import com.nyagoogle.android.gms.maps.internal.MapLifecycleDelegate;
+import com.nyagoogle.android.gms.maps.model.RuntimeRemoteException;
 
 public class MapViewDelegate implements MapLifecycleDelegate {
     private final ViewGroup container;

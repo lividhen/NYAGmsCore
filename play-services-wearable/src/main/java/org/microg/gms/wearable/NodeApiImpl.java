@@ -16,10 +16,10 @@
 
 package org.microg.gms.wearable;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.wearable.NodeApi;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.wearable.NodeApi;
 
 public class NodeApiImpl implements NodeApi {
     @Override

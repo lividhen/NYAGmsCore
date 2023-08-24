@@ -6,6 +6,6 @@
 package org.microg.gms.firebase.auth;
 
 public class Constants {
-    public static final String EXTRA_API_KEY = "com.google.firebase.auth.API_KEY";
-    public static final String EXTRA_LIBRARY_VERSION = "com.google.firebase.auth.LIBRARY_VERSION";
+    public static final String EXTRA_API_KEY = "com.nyagoogle.firebase.auth.API_KEY";
+    public static final String EXTRA_LIBRARY_VERSION = "com.nyagoogle.firebase.auth.LIBRARY_VERSION";
 }

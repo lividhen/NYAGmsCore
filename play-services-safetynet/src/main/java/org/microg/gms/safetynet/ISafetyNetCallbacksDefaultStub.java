@@ -7,14 +7,14 @@ package org.microg.gms.safetynet;
 
 import android.os.RemoteException;
 
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.safetynet.AttestationData;
-import com.google.android.gms.safetynet.HarmfulAppsData;
-import com.google.android.gms.safetynet.HarmfulAppsInfo;
-import com.google.android.gms.safetynet.RecaptchaResultData;
-import com.google.android.gms.safetynet.RemoveHarmfulAppData;
-import com.google.android.gms.safetynet.SafeBrowsingData;
-import com.google.android.gms.safetynet.internal.ISafetyNetCallbacks;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.safetynet.AttestationData;
+import com.nyagoogle.android.gms.safetynet.HarmfulAppsData;
+import com.nyagoogle.android.gms.safetynet.HarmfulAppsInfo;
+import com.nyagoogle.android.gms.safetynet.RecaptchaResultData;
+import com.nyagoogle.android.gms.safetynet.RemoveHarmfulAppData;
+import com.nyagoogle.android.gms.safetynet.SafeBrowsingData;
+import com.nyagoogle.android.gms.safetynet.internal.ISafetyNetCallbacks;
 
 import java.util.List;
 

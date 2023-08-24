@@ -8,7 +8,7 @@ package org.microg.gms.oss.licenses;
 import android.content.Context;
 import android.content.res.Resources;
 
-import com.google.android.gms.oss.licenses.License;
+import com.nyagoogle.android.gms.oss.licenses.License;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

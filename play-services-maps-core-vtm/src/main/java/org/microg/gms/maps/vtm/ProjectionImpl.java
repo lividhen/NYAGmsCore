@@ -18,11 +18,11 @@ package org.microg.gms.maps.vtm;
 
 import android.os.RemoteException;
 
-import com.google.android.gms.dynamic.IObjectWrapper;
-import com.google.android.gms.dynamic.ObjectWrapper;
-import com.google.android.gms.maps.internal.IProjectionDelegate;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.VisibleRegion;
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper;
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper;
+import com.nyagoogle.android.gms.maps.internal.IProjectionDelegate;
+import com.nyagoogle.android.gms.maps.model.LatLng;
+import com.nyagoogle.android.gms.maps.model.VisibleRegion;
 
 import org.oscim.core.Point;
 import org.oscim.map.Viewport;

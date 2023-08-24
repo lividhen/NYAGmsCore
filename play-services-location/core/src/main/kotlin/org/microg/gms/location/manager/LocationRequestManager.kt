@@ -14,10 +14,14 @@ import android.util.Log
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.location.*
-import com.google.android.gms.location.Granularity.*
-import com.google.android.gms.location.Priority.*
-import com.google.android.gms.location.internal.ClientIdentity
+import com.nyagoogle.android.gms.location.Granularity
+import com.nyagoogle.android.gms.location.Granularity.*
+import com.nyagoogle.android.gms.location.ILocationCallback
+import com.nyagoogle.android.gms.location.LocationRequest
+import com.nyagoogle.android.gms.location.LocationResult
+import com.nyagoogle.android.gms.location.Priority
+import com.nyagoogle.android.gms.location.Priority.*
+import com.nyagoogle.android.gms.location.internal.ClientIdentity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -293,12 +297,12 @@ class LocationRequestManager(private val context: Context, private val lifecycle
         const val CACHE_TYPE = 1
 
         private class LocationRequestHolderParcelable(
-            val clientIdentity: ClientIdentity,
-            val request: LocationRequest,
-            val pendingIntent: PendingIntent,
-            val start: Long,
-            val updates: Int,
-            val lastLocation: Location?
+                val clientIdentity: ClientIdentity,
+                val request: LocationRequest,
+                val pendingIntent: PendingIntent,
+                val start: Long,
+                val updates: Int,
+                val lastLocation: Location?
         ) : Parcelable {
             constructor(parcel: Parcel) : this(
                 parcel.readParcelable(ClientIdentity::class.java.classLoader)!!,
@@ -334,11 +338,11 @@ class LocationRequestManager(private val context: Context, private val lifecycle
         }
 
         private class LocationRequestHolder(
-            private val context: Context,
-            val clientIdentity: ClientIdentity,
-            private var request: LocationRequest,
-            private var callback: ILocationCallback?,
-            private val pendingIntent: PendingIntent?
+                private val context: Context,
+                val clientIdentity: ClientIdentity,
+                private var request: LocationRequest,
+                private var callback: ILocationCallback?,
+                private val pendingIntent: PendingIntent?
         ) {
             private var start = SystemClock.elapsedRealtime()
             private var updates = 0

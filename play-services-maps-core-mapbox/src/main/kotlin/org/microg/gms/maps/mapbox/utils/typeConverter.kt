@@ -17,19 +17,17 @@
 package org.microg.gms.maps.mapbox.utils
 
 import android.os.Bundle
-import android.util.Log
-import com.google.android.gms.maps.internal.ICancelableCallback
+import com.nyagoogle.android.gms.maps.internal.ICancelableCallback
 import com.mapbox.geojson.Point
 import com.mapbox.mapboxsdk.camera.CameraPosition
 import com.mapbox.mapboxsdk.geometry.LatLng
 import com.mapbox.mapboxsdk.geometry.LatLngBounds
 import com.mapbox.mapboxsdk.geometry.VisibleRegion
 import com.mapbox.mapboxsdk.maps.MapboxMap
-import org.microg.gms.maps.mapbox.TAG
-import com.google.android.gms.maps.model.CameraPosition as GmsCameraPosition
-import com.google.android.gms.maps.model.LatLng as GmsLatLng
-import com.google.android.gms.maps.model.LatLngBounds as GmsLatLngBounds
-import com.google.android.gms.maps.model.VisibleRegion as GmsVisibleRegion
+import com.nyagoogle.android.gms.maps.model.CameraPosition as GmsCameraPosition
+import com.nyagoogle.android.gms.maps.model.LatLng as GmsLatLng
+import com.nyagoogle.android.gms.maps.model.LatLngBounds as GmsLatLngBounds
+import com.nyagoogle.android.gms.maps.model.VisibleRegion as GmsVisibleRegion
 
 fun GmsLatLng.toMapbox(): LatLng =
         LatLng(latitude, longitude)

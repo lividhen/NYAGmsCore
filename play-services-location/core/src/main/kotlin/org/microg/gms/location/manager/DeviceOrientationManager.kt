@@ -28,11 +28,11 @@ import androidx.core.location.LocationCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.location.DeviceOrientation
-import com.google.android.gms.location.DeviceOrientationRequest
-import com.google.android.gms.location.IDeviceOrientationListener
-import com.google.android.gms.location.internal.ClientIdentity
-import com.google.android.gms.location.internal.DeviceOrientationRequestInternal
+import com.nyagoogle.android.gms.location.DeviceOrientation
+import com.nyagoogle.android.gms.location.DeviceOrientationRequest
+import com.nyagoogle.android.gms.location.IDeviceOrientationListener
+import com.nyagoogle.android.gms.location.internal.ClientIdentity
+import com.nyagoogle.android.gms.location.internal.DeviceOrientationRequestInternal
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import org.microg.gms.location.formatDuration
@@ -287,9 +287,9 @@ class DeviceOrientationManager(private val context: Context, private val lifecyc
         const val MAX_REPORT_LATENCY_US = 200_000
 
         private class DeviceOrientationRequestHolder(
-            private val clientIdentity: ClientIdentity,
-            private val request: DeviceOrientationRequest,
-            private val listener: IDeviceOrientationListener,
+                private val clientIdentity: ClientIdentity,
+                private val request: DeviceOrientationRequest,
+                private val listener: IDeviceOrientationListener,
         ) {
             private var updates = 0
             private var lastOrientation: DeviceOrientation? = null

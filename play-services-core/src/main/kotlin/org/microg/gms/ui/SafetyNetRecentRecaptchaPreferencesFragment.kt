@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.text.format.DateUtils
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import com.google.android.gms.R
+import com.nyagoogle.android.gms.R
 import org.microg.gms.safetynet.SafetyNetSummary
 
 

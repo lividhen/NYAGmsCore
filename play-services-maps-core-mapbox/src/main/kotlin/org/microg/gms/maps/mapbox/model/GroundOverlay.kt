@@ -7,13 +7,13 @@ package org.microg.gms.maps.mapbox.model
 
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.dynamic.unwrap
-import com.google.android.gms.maps.model.GroundOverlayOptions
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.LatLngBounds
-import com.google.android.gms.maps.model.internal.IGroundOverlayDelegate
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.dynamic.unwrap
+import com.nyagoogle.android.gms.maps.model.GroundOverlayOptions
+import com.nyagoogle.android.gms.maps.model.LatLng
+import com.nyagoogle.android.gms.maps.model.LatLngBounds
+import com.nyagoogle.android.gms.maps.model.internal.IGroundOverlayDelegate
 import org.microg.gms.maps.mapbox.GoogleMapImpl
 import org.microg.gms.utils.warnOnTransactionIssues
 

@@ -19,14 +19,14 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 android {
-    namespace "com.google.android.gms.base"
+    namespace "com.nyagoogle.android.gms.base"
 
     compileSdkVersion androidCompileSdk
     buildToolsVersion "$androidBuildVersionTools"
 
-    aidlPackagedList "com/google/android/gms/common/data/DataHolder.aidl"
-    aidlPackagedList "com/google/android/gms/common/images/WebImage.aidl"
-    aidlPackagedList "com/google/android/gms/common/api/internal/IStatusCallback.aidl"
+    aidlPackagedList "com/nyagoogle/android/gms/common/data/DataHolder.aidl"
+    aidlPackagedList "com/nyagoogle/android/gms/common/images/WebImage.aidl"
+    aidlPackagedList "com/nyagoogle/android/gms/common/api/internal/IStatusCallback.aidl"
 
     buildFeatures {
         aidl = true

@@ -19,12 +19,12 @@ package org.microg.gms.wearable;
 import android.net.Uri;
 import android.util.Log;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.wearable.Channel;
-import com.google.android.gms.wearable.ChannelApi;
-import com.google.android.gms.wearable.internal.ChannelParcelable;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.wearable.Channel;
+import com.nyagoogle.android.gms.wearable.ChannelApi;
+import com.nyagoogle.android.gms.wearable.internal.ChannelParcelable;
 
 public class ChannelImpl extends ChannelParcelable implements Channel {
     private static final String TAG = "GmsWearChannelImpl";

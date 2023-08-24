@@ -13,11 +13,11 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
 
-import com.google.android.gms.droidguard.DroidGuardHandle;
-import com.google.android.gms.droidguard.internal.DroidGuardInitReply;
-import com.google.android.gms.droidguard.internal.DroidGuardResultsRequest;
-import com.google.android.gms.droidguard.internal.IDroidGuardHandle;
-import com.google.android.gms.droidguard.internal.IDroidGuardService;
+import com.nyagoogle.android.gms.droidguard.DroidGuardHandle;
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardInitReply;
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardResultsRequest;
+import com.nyagoogle.android.gms.droidguard.internal.IDroidGuardHandle;
+import com.nyagoogle.android.gms.droidguard.internal.IDroidGuardService;
 
 import org.microg.gms.common.GmsClient;
 import org.microg.gms.common.GmsService;

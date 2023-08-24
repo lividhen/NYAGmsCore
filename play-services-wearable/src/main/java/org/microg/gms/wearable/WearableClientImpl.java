@@ -20,9 +20,9 @@ import android.content.Context;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.wearable.Wearable;
-import com.google.android.gms.wearable.internal.IWearableService;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.wearable.Wearable;
+import com.nyagoogle.android.gms.wearable.internal.IWearableService;
 
 import org.microg.gms.common.GmsClient;
 import org.microg.gms.common.GmsService;

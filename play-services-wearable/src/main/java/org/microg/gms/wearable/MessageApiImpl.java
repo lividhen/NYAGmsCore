@@ -18,12 +18,12 @@ package org.microg.gms.wearable;
 
 import android.os.RemoteException;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.wearable.MessageApi;
-import com.google.android.gms.wearable.Wearable;
-import com.google.android.gms.wearable.internal.SendMessageResponse;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.wearable.MessageApi;
+import com.nyagoogle.android.gms.wearable.Wearable;
+import com.nyagoogle.android.gms.wearable.internal.SendMessageResponse;
 
 import org.microg.gms.common.GmsConnector;
 

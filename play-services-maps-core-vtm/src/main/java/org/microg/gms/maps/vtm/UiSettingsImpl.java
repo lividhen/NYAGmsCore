@@ -17,7 +17,7 @@
 package org.microg.gms.maps.vtm;
 
 import android.os.RemoteException;
-import com.google.android.gms.maps.internal.IUiSettingsDelegate;
+import com.nyagoogle.android.gms.maps.internal.IUiSettingsDelegate;
 
 public class UiSettingsImpl extends IUiSettingsDelegate.Stub {
     private boolean zoomControlsEnabled;

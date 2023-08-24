@@ -27,9 +27,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.Messenger;
-import android.util.Log;
 
-import com.google.android.gms.iid.InstanceID;
+import com.nyagoogle.android.gms.iid.InstanceID;
 
 import java.io.IOException;
 import java.util.concurrent.BlockingQueue;
@@ -38,7 +37,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
-import static com.google.android.gms.gcm.GoogleCloudMessaging.ERROR_SERVICE_NOT_AVAILABLE;
+import static com.nyagoogle.android.gms.gcm.GoogleCloudMessaging.ERROR_SERVICE_NOT_AVAILABLE;
 import static org.microg.gms.common.Constants.GMS_PACKAGE_NAME;
 import static org.microg.gms.common.Constants.GSF_PACKAGE_NAME;
 import static org.microg.gms.gcm.GcmConstants.ACTION_C2DM_REGISTER;

@@ -12,18 +12,22 @@ import android.content.pm.PackageManager
 import android.os.Binder
 import android.os.Build.VERSION.SDK_INT
 import android.os.Process
-import android.os.WorkSource
 import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.core.app.AppOpsManagerCompat
 import androidx.core.content.getSystemService
-import com.google.android.gms.common.Feature
-import com.google.android.gms.location.*
-import com.google.android.gms.location.internal.ClientIdentity
-import com.google.android.gms.location.internal.IFusedLocationProviderCallback
+import com.nyagoogle.android.gms.common.Feature
+import com.nyagoogle.android.gms.location.*
+import com.nyagoogle.android.gms.location.Granularity
+import com.nyagoogle.android.gms.location.ILocationCallback
+import com.nyagoogle.android.gms.location.ILocationListener
+import com.nyagoogle.android.gms.location.LocationAvailability
+import com.nyagoogle.android.gms.location.LocationRequest
+import com.nyagoogle.android.gms.location.LocationResult
+import com.nyagoogle.android.gms.location.internal.ClientIdentity
+import com.nyagoogle.android.gms.location.internal.IFusedLocationProviderCallback
 import org.microg.gms.common.PackageUtils
 import org.microg.gms.location.GranularityUtil
-import org.microg.gms.utils.WorkSourceUtil
 
 const val TAG = "LocationManager"
 
@@ -107,9 +111,9 @@ fun getEffectiveGranularity(requestGranularity: @Granularity Int, permissionGran
 }
 
 fun Context.noteAppOpForEffectiveGranularity(
-    clientIdentity: ClientIdentity,
-    effectiveGranularity: @Granularity Int,
-    message: String? = null
+        clientIdentity: ClientIdentity,
+        effectiveGranularity: @Granularity Int,
+        message: String? = null
 ): Boolean {
     return if (SDK_INT >= 19) {
         try {
@@ -179,9 +183,9 @@ private fun Context.checkAppOp(
 
 @RequiresApi(19)
 private fun Context.startAppOp(
-    op: String,
-    clientIdentity: ClientIdentity,
-    message: String?
+        op: String,
+        clientIdentity: ClientIdentity,
+        message: String?
 ) = try {
     if (SDK_INT >= 30 && clientIdentity.attributionTag != null) {
         getSystemService<AppOpsManager>()?.startOpNoThrow(op, clientIdentity.uid, clientIdentity.packageName, clientIdentity.attributionTag!!, message)
@@ -216,9 +220,9 @@ private fun Context.finishAppOp(
 
 @RequiresApi(19)
 private fun Context.noteAppOp(
-    op: String,
-    clientIdentity: ClientIdentity,
-    message: String? = null
+        op: String,
+        clientIdentity: ClientIdentity,
+        message: String? = null
 ) = try {
     if (SDK_INT >= 30) {
         getSystemService<AppOpsManager>()

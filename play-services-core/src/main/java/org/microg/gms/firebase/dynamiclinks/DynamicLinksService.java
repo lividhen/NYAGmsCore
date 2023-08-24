@@ -16,21 +16,15 @@
 
 package org.microg.gms.firebase.dynamiclinks;
 
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
 import android.util.Log;
 import android.os.RemoteException;
 
-import com.google.android.gms.common.api.CommonStatusCodes;
-import com.google.android.gms.common.internal.GetServiceRequest;
-import com.google.android.gms.common.internal.IGmsCallbacks;
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest;
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks;
 
 import org.microg.gms.BaseService;
 import org.microg.gms.common.GmsService;
 import org.microg.gms.common.PackageUtils;
-
-import org.microg.gms.firebase.dynamiclinks.DynamicLinksServiceImpl;
 
 public class DynamicLinksService extends BaseService {
     private static final String TAG = "GmsDynamicLinksService";

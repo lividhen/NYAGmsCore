@@ -9,8 +9,8 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import android.util.Log
 import androidx.core.content.ContextCompat
-import com.google.android.gms.R
-import com.google.android.gms.common.api.Status
+import com.nyagoogle.android.gms.R
+import com.nyagoogle.android.gms.common.api.Status
 import org.json.JSONObject
 import org.microg.gms.fido.core.map
 import org.microg.gms.safetynet.SafetyNetRequestType

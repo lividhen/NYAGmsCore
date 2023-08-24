@@ -11,16 +11,20 @@ import android.os.Handler
 import android.os.Looper
 import android.os.RemoteException
 import android.util.Log
-import com.google.android.gms.ads.internal.AdErrorParcel
-import com.google.android.gms.ads.internal.AdRequestParcel
-import com.google.android.gms.ads.internal.ServerSideVerificationOptionsParcel
-import com.google.android.gms.ads.internal.client.IOnAdMetadataChangedListener
-import com.google.android.gms.ads.internal.client.IOnPaidEventListener
-import com.google.android.gms.ads.internal.client.IResponseInfo
-import com.google.android.gms.ads.internal.meditation.client.IAdapterCreator
-import com.google.android.gms.ads.internal.rewarded.client.*
-import com.google.android.gms.common.api.CommonStatusCodes
-import com.google.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.ads.internal.AdErrorParcel
+import com.nyagoogle.android.gms.ads.internal.AdRequestParcel
+import com.nyagoogle.android.gms.ads.internal.ServerSideVerificationOptionsParcel
+import com.nyagoogle.android.gms.ads.internal.client.IOnAdMetadataChangedListener
+import com.nyagoogle.android.gms.ads.internal.client.IOnPaidEventListener
+import com.nyagoogle.android.gms.ads.internal.client.IResponseInfo
+import com.nyagoogle.android.gms.ads.internal.meditation.client.IAdapterCreator
+import com.nyagoogle.android.gms.ads.internal.rewarded.client.IRewardItem
+import com.nyagoogle.android.gms.ads.internal.rewarded.client.IRewardedAd
+import com.nyagoogle.android.gms.ads.internal.rewarded.client.IRewardedAdCallback
+import com.nyagoogle.android.gms.ads.internal.rewarded.client.IRewardedAdLoadCallback
+import com.nyagoogle.android.gms.ads.internal.rewarded.client.IRewardedAdSkuListener
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
 
 private const val TAG = "RewardedAd"
 

@@ -18,22 +18,22 @@ package org.microg.gms.maps.mapbox.model
 
 import android.os.Parcel
 import android.util.Log
-import com.google.android.gms.dynamic.IObjectWrapper
-import com.google.android.gms.dynamic.ObjectWrapper
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
-import com.google.android.gms.maps.model.internal.IMarkerDelegate
+import com.nyagoogle.android.gms.dynamic.IObjectWrapper
+import com.nyagoogle.android.gms.dynamic.ObjectWrapper
+import com.nyagoogle.android.gms.maps.model.LatLng
+import com.nyagoogle.android.gms.maps.model.MarkerOptions
+import com.nyagoogle.android.gms.maps.model.internal.IMarkerDelegate
 import com.mapbox.mapboxsdk.plugins.annotation.AnnotationManager
 import com.mapbox.mapboxsdk.plugins.annotation.Symbol
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions
-import com.google.android.gms.dynamic.unwrap
+import com.nyagoogle.android.gms.dynamic.unwrap
 import org.microg.gms.maps.mapbox.AbstractGoogleMap
 import org.microg.gms.maps.mapbox.GoogleMapImpl
 import org.microg.gms.maps.mapbox.LiteGoogleMapImpl
 import org.microg.gms.maps.mapbox.utils.toMapbox
 
 abstract class AbstractMarker(
-    private val id: String, options: MarkerOptions, private val map: AbstractGoogleMap
+        private val id: String, options: MarkerOptions, private val map: AbstractGoogleMap
 ) : IMarkerDelegate.Stub() {
 
     internal var position: LatLng = options.position

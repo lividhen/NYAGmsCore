@@ -10,7 +10,11 @@ import android.os.Bundle
 import android.util.Base64
 import android.util.Log
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.fido.fido2.api.common.*
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.ErrorCode
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialRequestOptions
 import kotlinx.coroutines.CancellationException
 import org.json.JSONArray
 import org.json.JSONObject

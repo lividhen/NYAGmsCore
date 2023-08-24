@@ -18,14 +18,14 @@ package org.microg.gms.wearable;
 
 import android.net.Uri;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.wearable.Asset;
-import com.google.android.gms.wearable.DataApi;
-import com.google.android.gms.wearable.DataItemAsset;
-import com.google.android.gms.wearable.DataItemBuffer;
-import com.google.android.gms.wearable.internal.PutDataRequest;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.common.api.PendingResult;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.wearable.Asset;
+import com.nyagoogle.android.gms.wearable.DataApi;
+import com.nyagoogle.android.gms.wearable.DataItemAsset;
+import com.nyagoogle.android.gms.wearable.DataItemBuffer;
+import com.nyagoogle.android.gms.wearable.internal.PutDataRequest;
 
 public class DataApiImpl implements DataApi {
     @Override

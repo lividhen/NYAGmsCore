@@ -12,7 +12,7 @@
         android:label="@string/service_name_exposure"
         tools:layout="@layout/exposure_notifications_fragment">
         <deepLink
-            app:action="com.google.android.gms.settings.EXPOSURE_NOTIFICATION_SETTINGS"
+            app:action="com.nyagoogle.android.gms.settings.EXPOSURE_NOTIFICATION_SETTINGS"
             app:uri="x-gms-settings://exposure-notifications" />
 
         <action

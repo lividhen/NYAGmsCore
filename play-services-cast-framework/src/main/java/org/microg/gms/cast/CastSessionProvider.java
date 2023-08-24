@@ -6,10 +6,10 @@
 package org.microg.gms.cast;
 
 import android.content.Context;
-import com.google.android.gms.cast.CastMediaControlIntent;
-import com.google.android.gms.cast.framework.CastOptions;
-import com.google.android.gms.cast.framework.Session;
-import com.google.android.gms.cast.framework.SessionProvider;
+import com.nyagoogle.android.gms.cast.CastMediaControlIntent;
+import com.nyagoogle.android.gms.cast.framework.CastOptions;
+import com.nyagoogle.android.gms.cast.framework.Session;
+import com.nyagoogle.android.gms.cast.framework.SessionProvider;
 
 public class CastSessionProvider extends SessionProvider {
     private CastOptions castOptions;

@@ -8,12 +8,29 @@ package org.microg.gms.location.manager
 import android.app.PendingIntent
 import android.location.Location
 import android.os.IBinder
-import com.google.android.gms.common.api.CommonStatusCodes
-import com.google.android.gms.common.api.Status
-import com.google.android.gms.common.api.internal.IStatusCallback
-import com.google.android.gms.common.internal.ICancelToken
-import com.google.android.gms.location.*
-import com.google.android.gms.location.internal.*
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes
+import com.nyagoogle.android.gms.common.api.Status
+import com.nyagoogle.android.gms.common.api.internal.IStatusCallback
+import com.nyagoogle.android.gms.common.internal.ICancelToken
+import com.nyagoogle.android.gms.location.ActivityRecognitionRequest
+import com.nyagoogle.android.gms.location.CurrentLocationRequest
+import com.nyagoogle.android.gms.location.GeofencingRequest
+import com.nyagoogle.android.gms.location.Granularity
+import com.nyagoogle.android.gms.location.ILocationCallback
+import com.nyagoogle.android.gms.location.ILocationListener
+import com.nyagoogle.android.gms.location.LastLocationRequest
+import com.nyagoogle.android.gms.location.LocationAvailability
+import com.nyagoogle.android.gms.location.LocationAvailabilityRequest
+import com.nyagoogle.android.gms.location.LocationRequest
+import com.nyagoogle.android.gms.location.internal.FusedLocationProviderResult
+import com.nyagoogle.android.gms.location.internal.IGeofencerCallbacks
+import com.nyagoogle.android.gms.location.internal.IGoogleLocationManagerService
+import com.nyagoogle.android.gms.location.internal.ILocationAvailabilityStatusCallback
+import com.nyagoogle.android.gms.location.internal.ILocationStatusCallback
+import com.nyagoogle.android.gms.location.internal.LocationReceiver
+import com.nyagoogle.android.gms.location.internal.LocationRequestInternal
+import com.nyagoogle.android.gms.location.internal.LocationRequestUpdateData
+import com.nyagoogle.android.gms.location.internal.ParcelableGeofence
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicReference
@@ -114,11 +131,11 @@ abstract class AbstractLocationManagerInstance : IGoogleLocationManagerService.S
     // region Location updates
 
     abstract fun registerLocationUpdates(
-        oldBinder: IBinder?,
-        binder: IBinder,
-        callback: ILocationCallback,
-        request: LocationRequest,
-        statusCallback: IStatusCallback
+            oldBinder: IBinder?,
+            binder: IBinder,
+            callback: ILocationCallback,
+            request: LocationRequest,
+            statusCallback: IStatusCallback
     )
 
     abstract fun registerLocationUpdates(pendingIntent: PendingIntent, request: LocationRequest, statusCallback: IStatusCallback)

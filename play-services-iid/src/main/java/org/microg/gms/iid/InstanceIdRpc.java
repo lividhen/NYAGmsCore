@@ -35,8 +35,8 @@ import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 
-import com.google.android.gms.iid.InstanceID;
-import com.google.android.gms.iid.MessengerCompat;
+import com.nyagoogle.android.gms.iid.InstanceID;
+import com.nyagoogle.android.gms.iid.MessengerCompat;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -51,10 +51,10 @@ import java.util.Random;
 
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 import static android.os.Build.VERSION.SDK_INT;
-import static com.google.android.gms.iid.InstanceID.ERROR_BACKOFF;
-import static com.google.android.gms.iid.InstanceID.ERROR_MISSING_INSTANCEID_SERVICE;
-import static com.google.android.gms.iid.InstanceID.ERROR_SERVICE_NOT_AVAILABLE;
-import static com.google.android.gms.iid.InstanceID.ERROR_TIMEOUT;
+import static com.nyagoogle.android.gms.iid.InstanceID.ERROR_BACKOFF;
+import static com.nyagoogle.android.gms.iid.InstanceID.ERROR_MISSING_INSTANCEID_SERVICE;
+import static com.nyagoogle.android.gms.iid.InstanceID.ERROR_SERVICE_NOT_AVAILABLE;
+import static com.nyagoogle.android.gms.iid.InstanceID.ERROR_TIMEOUT;
 import static org.microg.gms.common.Constants.GMS_PACKAGE_NAME;
 import static org.microg.gms.common.Constants.GSF_PACKAGE_NAME;
 import static org.microg.gms.common.Constants.GMS_VERSION_CODE;

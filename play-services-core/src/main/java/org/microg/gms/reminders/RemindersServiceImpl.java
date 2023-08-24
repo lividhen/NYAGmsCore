@@ -19,16 +19,16 @@ package org.microg.gms.reminders;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.google.android.gms.reminders.AccountState;
-import com.google.android.gms.reminders.CreateReminderOptionsInternal;
-import com.google.android.gms.reminders.LoadRemindersOptions;
-import com.google.android.gms.reminders.ReindexDueDatesOptions;
-import com.google.android.gms.reminders.UpdateRecurrenceOptions;
-import com.google.android.gms.reminders.internal.IRemindersCallbacks;
-import com.google.android.gms.reminders.internal.IRemindersService;
-import com.google.android.gms.reminders.model.CustomizedSnoozePresetEntity;
-import com.google.android.gms.reminders.model.TaskEntity;
-import com.google.android.gms.reminders.model.TaskIdEntity;
+import com.nyagoogle.android.gms.reminders.AccountState;
+import com.nyagoogle.android.gms.reminders.CreateReminderOptionsInternal;
+import com.nyagoogle.android.gms.reminders.LoadRemindersOptions;
+import com.nyagoogle.android.gms.reminders.ReindexDueDatesOptions;
+import com.nyagoogle.android.gms.reminders.UpdateRecurrenceOptions;
+import com.nyagoogle.android.gms.reminders.internal.IRemindersCallbacks;
+import com.nyagoogle.android.gms.reminders.internal.IRemindersService;
+import com.nyagoogle.android.gms.reminders.model.CustomizedSnoozePresetEntity;
+import com.nyagoogle.android.gms.reminders.model.TaskEntity;
+import com.nyagoogle.android.gms.reminders.model.TaskIdEntity;
 
 import java.util.List;
 

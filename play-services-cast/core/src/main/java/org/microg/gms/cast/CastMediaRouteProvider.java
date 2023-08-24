@@ -19,11 +19,9 @@ package org.microg.gms.cast;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.IntentFilter;
-import android.net.Uri;
 import android.net.nsd.NsdManager;
 import android.net.nsd.NsdServiceInfo;
 import android.os.Bundle;
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
 
@@ -34,17 +32,11 @@ import androidx.mediarouter.media.MediaRouteProvider;
 import androidx.mediarouter.media.MediaRouteProviderDescriptor;
 import androidx.mediarouter.media.MediaRouter;
 
-import com.google.android.gms.common.images.WebImage;
-import com.google.android.gms.cast.CastDevice;
-import com.google.android.gms.cast.CastMediaControlIntent;
+import com.nyagoogle.android.gms.cast.CastDevice;
+import com.nyagoogle.android.gms.cast.CastMediaControlIntent;
 
 import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.Inet4Address;
-import java.net.UnknownHostException;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.lang.Thread;
 import java.lang.Runnable;
 import java.util.List;
 import java.util.ArrayList;

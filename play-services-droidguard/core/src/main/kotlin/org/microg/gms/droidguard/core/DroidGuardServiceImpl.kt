@@ -6,11 +6,11 @@
 package org.microg.gms.droidguard.core
 
 import android.util.Log
-import com.google.android.gms.droidguard.DroidGuardChimeraService
-import com.google.android.gms.droidguard.internal.DroidGuardResultsRequest
-import com.google.android.gms.droidguard.internal.IDroidGuardCallbacks
-import com.google.android.gms.droidguard.internal.IDroidGuardHandle
-import com.google.android.gms.droidguard.internal.IDroidGuardService
+import com.nyagoogle.android.gms.droidguard.DroidGuardChimeraService
+import com.nyagoogle.android.gms.droidguard.internal.DroidGuardResultsRequest
+import com.nyagoogle.android.gms.droidguard.internal.IDroidGuardCallbacks
+import com.nyagoogle.android.gms.droidguard.internal.IDroidGuardHandle
+import com.nyagoogle.android.gms.droidguard.internal.IDroidGuardService
 
 class DroidGuardServiceImpl(private val service: DroidGuardChimeraService, private val packageName: String) : IDroidGuardService.Stub() {
     override fun guard(callbacks: IDroidGuardCallbacks?, flow: String?, map: MutableMap<Any?, Any?>?) {

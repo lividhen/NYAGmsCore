@@ -18,8 +18,8 @@ package org.microg.gms.wearable.databundle;
 
 import android.util.SparseArray;
 
-import com.google.android.gms.wearable.Asset;
-import com.google.android.gms.wearable.DataMap;
+import com.nyagoogle.android.gms.wearable.Asset;
+import com.nyagoogle.android.gms.wearable.DataMap;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -17,8 +17,6 @@
 package org.microg.gms.ui;
 
 import android.content.Intent;
-import android.location.Address;
-import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -38,13 +36,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.view.MenuItemCompat;
 
-import com.google.android.gms.R;
-import com.google.android.gms.common.api.CommonStatusCodes;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer;
-import com.google.android.gms.location.places.internal.PlaceImpl;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
+import com.nyagoogle.android.gms.R;
+import com.nyagoogle.android.gms.common.api.CommonStatusCodes;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.common.internal.safeparcel.SafeParcelableSerializer;
+import com.nyagoogle.android.gms.location.places.internal.PlaceImpl;
+import com.nyagoogle.android.gms.maps.model.LatLngBounds;
 
 import org.microg.gms.location.LocationConstants;
 //import org.microg.gms.maps.vtm.BackendMapView;
@@ -53,7 +50,6 @@ import org.microg.gms.location.LocationConstants;
 //import org.oscim.event.Event;
 //import org.oscim.map.Map;
 
-import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;

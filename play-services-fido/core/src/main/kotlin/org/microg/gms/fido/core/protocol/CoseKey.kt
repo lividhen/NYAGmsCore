@@ -5,16 +5,16 @@
 
 package org.microg.gms.fido.core.protocol
 
-import com.google.android.gms.fido.fido2.api.common.Algorithm
+import com.nyagoogle.android.gms.fido.fido2.api.common.Algorithm
 import com.upokecenter.cbor.CBOREncodeOptions
 import com.upokecenter.cbor.CBORObject
 import java.math.BigInteger
 
 class CoseKey(
-    val algorithm: Algorithm,
-    val x: ByteArray,
-    val y: ByteArray,
-    val curveId: Int
+        val algorithm: Algorithm,
+        val x: ByteArray,
+        val y: ByteArray,
+        val curveId: Int
 ) {
     constructor(algorithm: Algorithm, x: BigInteger, y: BigInteger, curveId: Int, curvePointSize: Int) :
             this(algorithm, x.toByteArray(curvePointSize), y.toByteArray(curvePointSize), curveId)

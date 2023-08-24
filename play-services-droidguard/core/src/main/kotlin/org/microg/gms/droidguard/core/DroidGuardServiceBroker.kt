@@ -5,9 +5,9 @@
 
 package org.microg.gms.droidguard.core
 
-import com.google.android.gms.common.internal.GetServiceRequest
-import com.google.android.gms.common.internal.IGmsCallbacks
-import com.google.android.gms.droidguard.DroidGuardChimeraService
+import com.nyagoogle.android.gms.common.internal.GetServiceRequest
+import com.nyagoogle.android.gms.common.internal.IGmsCallbacks
+import com.nyagoogle.android.gms.droidguard.DroidGuardChimeraService
 import org.microg.gms.AbstractGmsServiceBroker
 import org.microg.gms.common.GmsService
 import org.microg.gms.common.PackageUtils

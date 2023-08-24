@@ -6,11 +6,16 @@
 package org.microg.gms.fido.core.transport
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import com.google.android.gms.fido.fido2.api.common.*
-import com.google.android.gms.fido.fido2.api.common.UserVerificationRequirement.REQUIRED
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.AuthenticatorResponse
+import com.nyagoogle.android.gms.fido.fido2.api.common.EC2Algorithm
+import com.nyagoogle.android.gms.fido.fido2.api.common.ErrorCode
+import com.nyagoogle.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
+import com.nyagoogle.android.gms.fido.fido2.api.common.RequestOptions
+import com.nyagoogle.android.gms.fido.fido2.api.common.UserVerificationRequirement.REQUIRED
 import com.upokecenter.cbor.CBORObject
 import kotlinx.coroutines.delay
 import org.microg.gms.fido.core.*
@@ -47,9 +52,9 @@ abstract class TransportHandler(val transport: Transport, val callback: Transpor
     }
 
     private suspend fun ctap2register(
-        connection: CtapConnection,
-        options: RequestOptions,
-        clientDataHash: ByteArray
+            connection: CtapConnection,
+            options: RequestOptions,
+            clientDataHash: ByteArray
     ): Pair<AuthenticatorMakeCredentialResponse, ByteArray?> {
         val reqOptions = AuthenticatorMakeCredentialRequest.Companion.Options(
             options.registerOptions.authenticatorSelection?.requireResidentKey == true,
@@ -79,9 +84,9 @@ abstract class TransportHandler(val transport: Transport, val callback: Transpor
     }
 
     private suspend fun ctap1register(
-        connection: CtapConnection,
-        options: RequestOptions,
-        clientDataHash: ByteArray
+            connection: CtapConnection,
+            options: RequestOptions,
+            clientDataHash: ByteArray
     ): Pair<AuthenticatorMakeCredentialResponse, ByteArray> {
         val rpIdHash = options.rpId.toByteArray().digest("SHA-256")
         val appIdHash =
@@ -142,10 +147,10 @@ abstract class TransportHandler(val transport: Transport, val callback: Transpor
     }
 
     internal suspend fun register(
-        connection: CtapConnection,
-        context: Context,
-        options: RequestOptions,
-        callerPackage: String
+            connection: CtapConnection,
+            context: Context,
+            options: RequestOptions,
+            callerPackage: String
     ): AuthenticatorAttestationResponse {
         val (clientData, clientDataHash) = getClientDataAndHash(context, options, callerPackage)
         val (response, keyHandle) = when {
@@ -173,9 +178,9 @@ abstract class TransportHandler(val transport: Transport, val callback: Transpor
 
 
     private suspend fun ctap2sign(
-        connection: CtapConnection,
-        options: RequestOptions,
-        clientDataHash: ByteArray
+            connection: CtapConnection,
+            options: RequestOptions,
+            clientDataHash: ByteArray
     ): Pair<AuthenticatorGetAssertionResponse, ByteArray?> {
         val reqOptions = AuthenticatorGetAssertionRequest.Companion.Options(
             userVerification = options.signOptions.requireUserVerification == REQUIRED
@@ -200,10 +205,10 @@ abstract class TransportHandler(val transport: Transport, val callback: Transpor
     }
 
     private suspend fun ctap1sign(
-        connection: CtapConnection,
-        options: RequestOptions,
-        clientDataHash: ByteArray,
-        rpIdHash: ByteArray
+            connection: CtapConnection,
+            options: RequestOptions,
+            clientDataHash: ByteArray,
+            rpIdHash: ByteArray
     ): Pair<AuthenticatorGetAssertionResponse, ByteArray> {
         val cred = options.signOptions.allowList.firstOrNull { cred ->
             ctap1DeviceHasCredential(connection, clientDataHash, rpIdHash, cred)
@@ -231,9 +236,9 @@ abstract class TransportHandler(val transport: Transport, val callback: Transpor
     }
 
     private suspend fun ctap1sign(
-        connection: CtapConnection,
-        options: RequestOptions,
-        clientDataHash: ByteArray
+            connection: CtapConnection,
+            options: RequestOptions,
+            clientDataHash: ByteArray
     ): Pair<AuthenticatorGetAssertionResponse, ByteArray> {
         try {
             val rpIdHash = options.rpId.toByteArray().digest("SHA-256")
@@ -253,10 +258,10 @@ abstract class TransportHandler(val transport: Transport, val callback: Transpor
     }
 
     internal suspend fun sign(
-        connection: CtapConnection,
-        context: Context,
-        options: RequestOptions,
-        callerPackage: String
+            connection: CtapConnection,
+            context: Context,
+            options: RequestOptions,
+            callerPackage: String
     ): AuthenticatorAssertionResponse {
         val (clientData, clientDataHash) = getClientDataAndHash(context, options, callerPackage)
         val (response, credentialId) = when {

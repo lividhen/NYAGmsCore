@@ -20,9 +20,9 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.google.android.gms.appdatasearch.UsageInfo;
-import com.google.android.gms.appdatasearch.internal.ILightweightAppDataSearch;
-import com.google.android.gms.appdatasearch.internal.ILightweightAppDataSearchCallbacks;
+import com.nyagoogle.android.gms.appdatasearch.UsageInfo;
+import com.nyagoogle.android.gms.appdatasearch.internal.ILightweightAppDataSearch;
+import com.nyagoogle.android.gms.appdatasearch.internal.ILightweightAppDataSearchCallbacks;
 
 import java.util.Arrays;
 

@@ -19,12 +19,11 @@ package org.microg.gms.wearable;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
-import android.util.Log;
 
-import com.google.android.gms.common.data.DataHolder;
-import com.google.android.gms.wearable.Asset;
-import com.google.android.gms.wearable.internal.DataItemAssetParcelable;
-import com.google.android.gms.wearable.internal.DataItemParcelable;
+import com.nyagoogle.android.gms.common.data.DataHolder;
+import com.nyagoogle.android.gms.wearable.Asset;
+import com.nyagoogle.android.gms.wearable.internal.DataItemAssetParcelable;
+import com.nyagoogle.android.gms.wearable.internal.DataItemParcelable;
 
 import org.microg.wearable.proto.AssetEntry;
 import org.microg.wearable.proto.SetDataItem;

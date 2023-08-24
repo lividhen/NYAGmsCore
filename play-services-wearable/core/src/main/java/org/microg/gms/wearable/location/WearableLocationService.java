@@ -19,15 +19,15 @@ package org.microg.gms.wearable.location;
 import android.content.Context;
 import android.util.Log;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.common.internal.ClientIdentity;
-import com.google.android.gms.location.internal.LocationRequestInternal;
-import com.google.android.gms.wearable.DataMap;
-import com.google.android.gms.wearable.MessageEvent;
-import com.google.android.gms.wearable.Node;
-import com.google.android.gms.wearable.Wearable;
-import com.google.android.gms.wearable.WearableListenerService;
+import com.nyagoogle.android.gms.common.api.GoogleApiClient;
+import com.nyagoogle.android.gms.location.LocationRequest;
+import com.nyagoogle.android.gms.common.internal.ClientIdentity;
+import com.nyagoogle.android.gms.location.internal.LocationRequestInternal;
+import com.nyagoogle.android.gms.wearable.DataMap;
+import com.nyagoogle.android.gms.wearable.MessageEvent;
+import com.nyagoogle.android.gms.wearable.Node;
+import com.nyagoogle.android.gms.wearable.Wearable;
+import com.nyagoogle.android.gms.wearable.WearableListenerService;
 
 import java.util.ArrayList;
 import java.util.Collection;

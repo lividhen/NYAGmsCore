@@ -5,8 +5,8 @@
 
 package org.microg.gms.tasks;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.nyagoogle.android.gms.tasks.OnCompleteListener;
+import com.nyagoogle.android.gms.tasks.Task;
 
 import java.util.concurrent.Executor;
 

@@ -5,14 +5,14 @@
 
 package org.microg.gms.fido.core.protocol
 
-import com.google.android.gms.fido.fido2.api.common.Algorithm
+import com.nyagoogle.android.gms.fido.fido2.api.common.Algorithm
 import com.upokecenter.cbor.CBORObject
 
 class AndroidKeyAttestationObject(
-    authData: AuthenticatorData,
-    val alg: Algorithm,
-    val sig: ByteArray,
-    val x5c: List<ByteArray>
+        authData: AuthenticatorData,
+        val alg: Algorithm,
+        val sig: ByteArray,
+        val x5c: List<ByteArray>
 ) :
     AttestationObject(authData.encode()) {
     override val fmt: String

@@ -5,10 +5,10 @@
 
 package org.microg.gms.auth.api.phone;
 
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.common.api.internal.IStatusCallback;
-import com.google.android.gms.tasks.TaskCompletionSource;
+import com.nyagoogle.android.gms.common.api.ApiException;
+import com.nyagoogle.android.gms.common.api.Status;
+import com.nyagoogle.android.gms.common.api.internal.IStatusCallback;
+import com.nyagoogle.android.gms.tasks.TaskCompletionSource;
 
 class StatusCallbackImpl extends IStatusCallback.Stub {
     private final TaskCompletionSource<Void> completionSource;
