@@ -193,7 +193,7 @@
             android:exported="true" />
         <provider
             android:name="org.microg.gms.settings.GoogleSettingsProvider"
-            android:authorities="com.google.settings"
+            android:authorities="com.nyagoogle.settings"
             android:exported="true" />
         <provider
             android:name="org.microg.gms.feeds.SubscribedFeedsProvider"

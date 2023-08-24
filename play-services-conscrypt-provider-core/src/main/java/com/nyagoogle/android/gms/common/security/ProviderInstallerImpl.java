@@ -12,8 +12,8 @@ import android.util.Log;
 
 import androidx.annotation.Keep;
 
-import com.nyagoogle.android.gms.org.conscrypt.Conscrypt;
-import com.nyagoogle.android.gms.org.conscrypt.NativeCrypto;
+import com.google.android.gms.org.conscrypt.Conscrypt;
+import com.google.android.gms.org.conscrypt.NativeCrypto;
 import com.nyagoogle.android.gms.security.ProviderInstaller;
 
 import org.microg.gms.common.PackageUtils;
