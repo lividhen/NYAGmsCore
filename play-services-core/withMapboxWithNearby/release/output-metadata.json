@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.nyagoogle.android.gms",
+  "variantName": "withMapboxWithNearbyRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 233013057,
+      "versionName": "0.2.28.233013-dirty",
+      "outputFile": "play-services-core-withMapbox-withNearby-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

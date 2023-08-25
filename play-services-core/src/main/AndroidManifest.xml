@@ -251,7 +251,7 @@
             android:name="org.microg.gms.gcm.PushRegisterReceiver"
             android:process=":persistent">
             <intent-filter>
-                <action android:name="com.google.iid.TOKEN_REQUEST" />
+                <action android:name="com.nyagoogle.iid.TOKEN_REQUEST" />
             </intent-filter>
         </receiver>
 
